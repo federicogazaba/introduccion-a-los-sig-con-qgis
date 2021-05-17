@@ -1,5 +1,7 @@
 # Introduccion a los Sistemas de Informacion Geografica con Qgis
 
+Versión 1.0
+
 ## Descripción
 
 Básicamente este repositorio contiene el libro "Introducción a los Sistemas de Información Geográfica con Qgis" realizado con el software Lyx (editor LaTeX). Su licencia libre permite modificaciones y aportes, y con ese propósito se dispuso en este repositorio.
