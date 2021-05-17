@@ -24,7 +24,7 @@
 \use_microtype false
 \use_dash_ligatures true
 \graphics default
-\default_output_format default
+\default_output_format pdf2
 \output_sync 0
 \bibtex_command default
 \index_command default
@@ -72,7 +72,7 @@
 \dynamic_quotes 0
 \papercolumns 1
 \papersides 1
-\paperpagestyle default
+\paperpagestyle headings
 \tracking_changes false
 \output_changes false
 \html_math_output 0
@@ -82,8 +82,25 @@
 
 \begin_body
 
+\begin_layout Standard
+\begin_inset Graphics
+	filename img/0_portada.png
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
 \begin_layout Title
-Introducción a los Sistemas de Información Geográfica con Qgis
+Introducción a los Sistemas de Información Geográfica con QGIS
 \end_layout
 
 \begin_layout Author
@@ -95,7 +112,7 @@ La presente obra es una especie de manual o curso introductorio a los Sistemas
  de Información Georreferenciada (SIG) mediante el uso del software 
 \begin_inset CommandInset href
 LatexCommand href
-name "Qgis"
+name "QGIS"
 target "https://www.qgis.org/"
 literal "false"
 
@@ -103,7 +120,7 @@ literal "false"
 
 .
  El documento pretende ser una primer lectura para quienes recién comienzan
- con los SIG y Qgis, y ha sido organizado por niveles de dificultad creciente.
+ con los SIG y QGIS, y ha sido organizado por niveles de dificultad creciente.
  Desde su concepción ha sido pensado como material de consulta práctica
  de uso libre (
 \begin_inset CommandInset ref
@@ -128,7 +145,7 @@ literal "false"
 \end_layout
 
 \begin_layout Subsection*
-Dedicatoria
+Agradecimientos
 \end_layout
 
 \begin_layout Standard
@@ -213,33 +230,9 @@ literal "false"
 \end_layout
 
 \begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
 \begin_inset Graphics
 	filename img/0_crative_commons.png
-	lyxscale 50
-	scale 50
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Creative Commons 4.0 By-SA
-\end_layout
-
-\end_inset
-
-
-\end_layout
+	height 2cm
 
 \end_inset
 
@@ -251,7 +244,7 @@ Versión
 \end_layout
 
 \begin_layout Standard
-Versión preliminar 13/05/21
+Versión 1.0
 \end_layout
 
 \begin_layout Standard
@@ -308,6 +301,13 @@ Diseño
 Análisis
 \emph default
 .
+ Por último se incorpora un capítulo más, 
+\emph on
+Anexos
+\emph default
+, que tiene como objeto recopilar algunas herramientas y configuraciones
+ avanzadas que por sus características se decidió no incluir en ninguno
+ de los capítulos anteriores.
 \end_layout
 
 \begin_layout Description
@@ -422,16 +422,14 @@ análisis de datos de forma integral
 Anexos 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "chap:Edición"
+reference "chap:Anexos"
 plural "false"
 caps "false"
 noprefix "false"
 
 \end_inset
 
- En el anexo se encuentran algunas herramientas y configuraciones avanzadas
- que por sus características se decidió no incluir en ninguno de los capítulos
- anteriores.
+ Capítulo con herramientas y configuraciones adicionales.
 \end_layout
 
 \begin_layout Subsection*
@@ -500,15 +498,8 @@ Data
 \end_layout
 
 \begin_layout Standard
-La primer versión de este manual requería el uso de datos vectoriales existentes
- en el portal de datos de la Municipalidad de Pergamino, ya que inicialmente
- fue pensado para dar cursos de capacitación interna a agentes de la administrac
-ión pública.
-\end_layout
-
-\begin_layout Standard
-Para hacer más accesible y global este manual hemos tomado los datos de
- 
+Para hacer más accesible y global los ejemplos prácticos que figuran en
+ este documento se han tomado los datos de 
 \begin_inset CommandInset href
 LatexCommand href
 name "Natural Earth"
@@ -517,10 +508,10 @@ literal "false"
 
 \end_inset
 
- -al igual que en el manual de entrenamiento de Qgis- que es un repositorio
+ -al igual que en el manual de entrenamiento de QGIS- que es un repositorio
  de datos vectoriales y raster de dominio público.
- Con esto se logra que el manual pueda ser utilizado en cualquier parte
- del mundo sin problemas de localización regional.
+ Con esto se logra que el libro pueda ser utilizado en cualquier parte del
+ mundo sin problemas de localización regional.
 \end_layout
 
 \begin_layout Subsection*
@@ -531,7 +522,7 @@ Grupos de usuarios
 Siempre es bueno ponerse en contacto con otros usuarios más experimentados
  que podrán resolver dudas al respecto del uso de 
 \emph on
-Qgis
+QGIS
 \emph default
 , por ello se recopilan a continuación algunos enlaces interesantes:
 \end_layout
@@ -608,6 +599,124 @@ en las distintas redes sociales.
 Enlaces
 \end_layout
 
+\begin_layout Subsubsection*
+Internacional
+\end_layout
+
+\begin_layout Itemize
+\begin_inset CommandInset label
+LatexCommand label
+name "Natural-Earth-Data"
+
+\end_inset
+
+ Natural Earth Data 
+\begin_inset CommandInset href
+LatexCommand href
+target "http://www.naturalearthdata.com/"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset CommandInset label
+LatexCommand label
+name "QGIS-project.-QGIS.org,"
+
+\end_inset
+
+ QGIS.org, 2021.
+ QGIS Geographic Information System.
+ QGIS Association 
+\begin_inset CommandInset href
+LatexCommand href
+target "http://www.qgis.org"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset CommandInset label
+LatexCommand label
+name "QGIS-User-Guide"
+
+\end_inset
+
+ QGIS.org, 2021.
+ QGIS 3.16.
+ Guía de Usuario de QGIS.
+ QGIS Association 
+\begin_inset CommandInset href
+LatexCommand href
+target "https://docs.qgis.org/3.16/es/docs/user_manual/index.html"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset CommandInset label
+LatexCommand label
+name "Documentación-Oficial-Qgis"
+
+\end_inset
+
+ Documentación Oficial QGIS 
+\begin_inset CommandInset href
+LatexCommand href
+target "http://qgis.org/es/docs/index.html"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset CommandInset label
+LatexCommand label
+name "GeoServer"
+
+\end_inset
+
+ Servidor de mapas Geoserver 
+\begin_inset CommandInset href
+LatexCommand href
+target "http://geoserver.org/"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset CommandInset label
+LatexCommand label
+name "OpenStreetMap"
+
+\end_inset
+
+ Proyecto OpenStreetMap 
+\begin_inset CommandInset href
+LatexCommand href
+target "https://www.openstreetmap.org/"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+Argentina
+\end_layout
+
 \begin_layout Itemize
 \begin_inset CommandInset label
 LatexCommand label
@@ -615,7 +724,7 @@ name "IDERA-(IDE-Argentina)"
 
 \end_inset
 
-IDERA (IDE Argentina) - 
+ IDERA (IDE Argentina) 
 \begin_inset CommandInset href
 LatexCommand href
 target "http://www.idera.gob.ar"
@@ -633,7 +742,7 @@ name "IGN-(Instituto-Geográfico"
 
 \end_inset
 
- IGN (Instituto Geográfico Nacional, Argentina) - 
+ IGN (Instituto Geográfico Nacional, Argentina) 
 \begin_inset CommandInset href
 LatexCommand href
 target "http://www.ign.gob.ar/"
@@ -644,58 +753,30 @@ literal "false"
 
 \end_layout
 
-\begin_layout Itemize
-\begin_inset CommandInset label
-LatexCommand label
-name "Documentación-Oficial-Qgis"
-
-\end_inset
-
-Documentación Oficial Qgis - 
-\begin_inset CommandInset href
-LatexCommand href
-target "http://qgis.org/es/docs/index.html"
-literal "false"
-
-\end_inset
-
-
+\begin_layout Subsection*
+Fuentes
 \end_layout
 
-\begin_layout Itemize
-\begin_inset CommandInset label
-LatexCommand label
-name "Natural-Earth-Data"
-
-\end_inset
-
-Natural Earth Data - 
-\begin_inset CommandInset href
-LatexCommand href
-target "http://www.naturalearthdata.com/"
-literal "false"
-
-\end_inset
-
-
+\begin_layout Standard
+En el documento se utilizan distintas fuentes para las imágenes y figuras
+ por lo que salvo expresa mención, la elaboración o creación de las mismas
+ son del autor.
 \end_layout
 
-\begin_layout Itemize
-\begin_inset CommandInset label
-LatexCommand label
-name "GeoServer"
-
-\end_inset
-
-Servidor de mapas Geoserver - 
+\begin_layout Standard
+Asimismo, se ha utilizado como mapa base o de referencia OpenStreetMap en
+ algunas figuras e imágenes.
+ Los créditos de dichas imágenes corresponden a "© OpenStreetMap contributors"
+ (
 \begin_inset CommandInset href
 LatexCommand href
-target "http://geoserver.org/"
+name "licencia"
+target "www.openstreetmap.org/copyright or www.opendatacommons.org/licenses/odbl"
 literal "false"
 
 \end_inset
 
-
+).
 \end_layout
 
 \begin_layout Chapter
@@ -767,8 +848,7 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename img/0_gis.jpg
-	lyxscale 50
-	scale 50
+	height 5cm
 
 \end_inset
 
@@ -822,8 +902,8 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename img/0_sig_circuito.jpg
-	lyxscale 50
-	scale 50
+	lyxscale 75
+	height 4cm
 
 \end_inset
 
@@ -835,7 +915,6 @@ status open
 
 \begin_layout Plain Layout
 Circuito SIG.
- Fuente propia.
 \end_layout
 
 \end_inset
@@ -869,8 +948,7 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename img/0_esquema_capas.jpg
-	lyxscale 50
-	scale 50
+	height 4cm
 	rotateOrigin center
 
 \end_inset
@@ -918,8 +996,7 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename img/0_qgis3_ventana.jpg
-	lyxscale 50
-	scale 50
+	height 6cm
 
 \end_inset
 
@@ -930,8 +1007,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Qgis 3.2.
- Fuente propia.
+QGIS 3.2.
 \end_layout
 
 \end_inset
@@ -941,19 +1017,6 @@ Qgis 3.2.
 
 \begin_layout Plain Layout
 
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Foot
-status open
-
-\begin_layout Plain Layout
-Más adelante veremos con mayor detalle las componentes del software Qgis.
 \end_layout
 
 \end_inset
@@ -1023,8 +1086,7 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename img/0_esquema_ide.jpg
-	lyxscale 50
-	scale 50
+	height 5cm
 
 \end_inset
 
@@ -1090,8 +1152,7 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename img/0_problemas_parciales.jpg
-	lyxscale 50
-	scale 50
+	height 4cm
 
 \end_inset
 
@@ -1270,7 +1331,7 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename img/0_xyz_globo.jpg
-	scale 50
+	height 6cm
 
 \end_inset
 
@@ -1399,7 +1460,7 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename img/0_deformaciones_plano.jpg
-	scale 50
+	height 6cm
 
 \end_inset
 
@@ -1503,7 +1564,7 @@ Descarga
 \begin_layout Standard
 
 \emph on
-Qgis
+QGIS
 \emph default
  puede descargarse del 
 \begin_inset CommandInset href
@@ -1558,7 +1619,7 @@ Instalación
 Se recomienda seguir las instrucciones de instalación recomendadas en el
  sitio de 
 \emph on
-Qgis
+QGIS
 \emph default
 .
  Este manual no cubrirá este paso debido a la diversidad de sistemas operativos
@@ -1583,8 +1644,8 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename img/1_inicio_qgis.png
-	lyxscale 50
-	scale 50
+	lyxscale 75
+	width 100text%
 
 \end_inset
 
@@ -1595,8 +1656,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Qgis 3.x, pantalla inicial.
- Fuente propia.
+QGIS 3.x, pantalla inicial.
 \end_layout
 
 \end_inset
@@ -1920,7 +1980,7 @@ literal "false"
 \end_layout
 
 \begin_layout Standard
-Existen varias formas de agregar capas vectoriales al proyecto de Qgis,
+Existen varias formas de agregar capas vectoriales al proyecto de QGIS,
  la primera, más simple es mediante el método de 
 \begin_inset Quotes cld
 \end_inset
@@ -1951,8 +2011,8 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename img/1_geopackage.png
-	lyxscale 50
-	scale 50
+	lyxscale 75
+	height 6cm
 
 \end_inset
 
@@ -1964,7 +2024,6 @@ status open
 
 \begin_layout Plain Layout
 Cuadro de diálogo del GeoPackage.
- Fuente propia.
 \end_layout
 
 \end_inset
@@ -2004,7 +2063,7 @@ status open
 \begin_inset Graphics
 	filename img/1_10m_admin.png
 	lyxscale 50
-	width 100text%
+	height 6cm
 
 \end_inset
 
@@ -2016,7 +2075,6 @@ status open
 
 \begin_layout Plain Layout
 Límites Administrativos con resolución de 10m.
- Fuente propia.
 \end_layout
 
 \end_inset
@@ -2095,7 +2153,7 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename img/1_airports_roads_countries.png
-	lyxscale 50
+	lyxscale 75
 	width 100text%
 
 \end_inset
@@ -2108,7 +2166,6 @@ status open
 
 \begin_layout Plain Layout
 Aeropuertos, rutas y países (los colores pueden variar).
- Fuente propia.
 \end_layout
 
 \end_inset
@@ -2220,8 +2277,8 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename img/1_tabla_aeropuertos.png
-	lyxscale 50
-	width 75text%
+	lyxscale 75
+	height 6cm
 
 \end_inset
 
@@ -2233,7 +2290,6 @@ status open
 
 \begin_layout Plain Layout
 Tabla de atributos de Aeropuertos.
- Fuente propia.
 \end_layout
 
 \end_inset
@@ -2290,7 +2346,7 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename img/1_tabla_seleccion.png
-	lyxscale 50
+	lyxscale 75
 	width 100text%
 
 \end_inset
@@ -2303,7 +2359,6 @@ status open
 
 \begin_layout Plain Layout
 Selección y zoom a un objeto desde la tabla de atributos.
- Fuente propia.
 \end_layout
 
 \end_inset
@@ -2360,7 +2415,7 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename img/1_identificacion_objeto.png
-	lyxscale 50
+	lyxscale 75
 	width 100text%
 
 \end_inset
@@ -2374,7 +2429,6 @@ status open
 \begin_layout Plain Layout
 Identificación de objeto espacial.
  Los datos de la consulta se observan en el panel derecho.
- Fuente propia.
 \end_layout
 
 \end_inset
@@ -2406,7 +2460,7 @@ Quizás la forma más práctica de visualizar los datos del objeto no sea la
 \end_inset
 
 , en la parte superior del mismo panel.
- Esta configuración se guarda para el perfil de Qgis que estemos usando.
+ Esta configuración se guarda para el perfil de QGIS que estemos usando.
 \end_layout
 
 \begin_layout Standard
@@ -2418,7 +2472,7 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename img/1_identificacion_objeto_simple.png
-	lyxscale 50
+	lyxscale 75
 	width 100text%
 
 \end_inset
@@ -2431,7 +2485,6 @@ status open
 
 \begin_layout Plain Layout
 Identificación simple de un objeto, más fácil de interpretar.
- Fuente propia.
 \end_layout
 
 \end_inset
@@ -2531,7 +2584,6 @@ status open
 
 \begin_layout Plain Layout
 Selección por rectángulo.
- Fuente propia.
 \end_layout
 
 \end_inset
@@ -2708,7 +2760,7 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename img/1_ne1_hr_lc_sr_w_dr.png
-	lyxscale 50
+	lyxscale 75
 	width 100text%
 
 \end_inset
@@ -2721,7 +2773,6 @@ status open
 
 \begin_layout Plain Layout
 Raster descargado de Natural Earth.
- Fuente propia.
 \end_layout
 
 \end_inset
@@ -2770,7 +2821,7 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename img/1_orden_capas.png
-	lyxscale 50
+	lyxscale 75
 	width 100text%
 
 \end_inset
@@ -2783,7 +2834,6 @@ status open
 
 \begin_layout Plain Layout
 Orden de capas.
- Fuente propia.
 \end_layout
 
 \end_inset
@@ -2822,7 +2872,7 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename img/1_prende_apaga_capa.png
-	lyxscale 50
+	lyxscale 75
 	width 100text%
 
 \end_inset
@@ -2836,7 +2886,6 @@ status open
 \begin_layout Plain Layout
 La capa de países apagada permite la visualización a color de los continentes
  de la capa raster.
- Fuente propia.
 \end_layout
 
 \end_inset
@@ -2940,8 +2989,8 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename img/1_google_satelite.png
-	lyxscale 50
-	height 100text%
+	lyxscale 75
+	width 100text%
 
 \end_inset
 
@@ -2954,7 +3003,6 @@ status open
 \begin_layout Plain Layout
 Complemento QuickMapServices.
  Base Google Satelital.
- Fuente propia.
 \end_layout
 
 \end_inset
@@ -3009,8 +3057,8 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename img/1_osm_xyz.png
-	lyxscale 50
-	height 100text%
+	lyxscale 75
+	width 100text%
 
 \end_inset
 
@@ -3022,7 +3070,6 @@ status open
 
 \begin_layout Plain Layout
 Mapa base de OpenStreetMap mediante tesela XYZ.
- Fuente propia.
 \end_layout
 
 \end_inset
@@ -3100,8 +3147,7 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename img/1_capas_agrupadas.png
-	lyxscale 50
-	scale 60
+	height 3cm
 
 \end_inset
 
@@ -3113,7 +3159,6 @@ status open
 
 \begin_layout Plain Layout
 Capas agrupadas.
- Fuente propia.
 \end_layout
 
 \end_inset
@@ -3219,8 +3264,7 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename img/1_wms_ign.png
-	lyxscale 50
-	scale 60
+	height 5cm
 
 \end_inset
 
@@ -3232,7 +3276,6 @@ status open
 
 \begin_layout Plain Layout
 Servicio WMS del IGN Ar.
- Fuente propia.
 \end_layout
 
 \end_inset
@@ -3285,7 +3328,7 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename img/1_wms_ign_2.png
-	lyxscale 50
+	lyxscale 75
 	width 100text%
 
 \end_inset
@@ -3298,7 +3341,6 @@ status open
 
 \begin_layout Plain Layout
 Capa de Islas del IGN Ar.
- Fuente propia.
 \end_layout
 
 \end_inset
@@ -3390,7 +3432,7 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename img/2_capas_empotradas.png
-	scale 60
+	height 2cm
 
 \end_inset
 
@@ -3426,7 +3468,7 @@ Tanto las capas como grupos empotrados se verán en nuestro panel de capas
 \end_layout
 
 \begin_layout Quotation
-Nota: Si tenemos dos instancias de Qgis abiertas también es posible copiar
+Nota: Si tenemos dos instancias de QGIS abiertas también es posible copiar
  y pegar una capa de uno a otro proyecto.
  A diferencia de la opción de empotrar, aquí las capas son editables.
 \end_layout
@@ -3484,8 +3526,8 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename img/1_propiedades_capa.png
-	lyxscale 50
-	width 75text%
+	lyxscale 75
+	height 10cm
 
 \end_inset
 
@@ -3497,7 +3539,6 @@ status open
 
 \begin_layout Plain Layout
 Propiedades de la capa, a la izquierda las pestañas.
- Fuente propia.
 \end_layout
 
 \end_inset
@@ -3566,7 +3607,7 @@ Generación de Geometrías
 Etiquetas.
  Las etiquetas permiten identificar visualmente un objeto, por ejemplo el
  nombre de una localidad o país.
- Al igual que con los estilos, el etiquetado en Qgis posee la potencialidad
+ Al igual que con los estilos, el etiquetado en QGIS posee la potencialidad
  para generar prácticamente cualquier cosa que nos propongamos.
  Tiene varias características realmente interesantes, como por ejemplo que
  el programa se encarga de etiquetar “inteligentemente” (o intelimágicamente?)
@@ -3603,7 +3644,7 @@ Uniones.
 \begin_layout Description
 Acciones.
  Esta opción permite al usuario dotar de “scripts” o “macros” a las capas
- de Qgis, de forma que al hacer clic, por ejemplo, se pueda abrir un enlace
+ de QGIS, de forma que al hacer clic, por ejemplo, se pueda abrir un enlace
  en un navegador o se muestre una foto.
 \end_layout
 
@@ -3626,7 +3667,7 @@ name "sec:Panel-de-vista"
 \end_layout
 
 \begin_layout Standard
-Qgis permite utilizar un panel de vista general, es decir una “miniatura”
+QGIS permite utilizar un panel de vista general, es decir una “miniatura”
  del mapa a modo de referencia de ubicación.
  Este panel se activa desde “Configuración 
 \begin_inset Formula $\rightarrow$
@@ -3660,8 +3701,8 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename img/1_vista_general.png
-	lyxscale 50
-	height 100text%
+	lyxscale 75
+	width 100text%
 
 \end_inset
 
@@ -3678,7 +3719,6 @@ Se observa que la capa no tiene que estar necesariamente encendida para
 Vista general
 \emph default
 .
- Fuente propia.
 \end_layout
 
 \end_inset
@@ -3709,7 +3749,7 @@ Simbología y etiquetado
 
 \begin_layout Standard
 Hasta ahora hemos utilizado los datos vectoriales de forma predeterminada,
- es decir, que Qgis se encarga de los colores y tamaños de los objetos por
+ es decir, que QGIS se encarga de los colores y tamaños de los objetos por
  defecto y de forma automática.
  Sin embargo, un potencial de los SIG es visualizar los datos espaciales
  de diferentes formas, utilizando o no sus atributos para generar la 
@@ -3760,8 +3800,8 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename img/1_simbologia.png
-	lyxscale 50
-	width 75text%
+	lyxscale 75
+	height 10cm
 
 \end_inset
 
@@ -3773,7 +3813,6 @@ status open
 
 \begin_layout Plain Layout
 Simbología por defecto para la capa de puntos.
- Fuente propia.
 \end_layout
 
 \end_inset
@@ -3819,7 +3858,7 @@ status open
 \begin_inset Graphics
 	filename img/1_aeropuertos.png
 	lyxscale 50
-	width 50text%
+	height 6cm
 
 \end_inset
 
@@ -3831,7 +3870,6 @@ status open
 
 \begin_layout Plain Layout
 Aeropuertos.
- Fuente propia.
 \end_layout
 
 \end_inset
@@ -3895,8 +3933,8 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename img/1_aeropuertos_clasificados.png
-	lyxscale 50
-	width 75text%
+	lyxscale 75
+	height 10cm
 
 \end_inset
 
@@ -3908,7 +3946,6 @@ status open
 
 \begin_layout Plain Layout
 Clasificación de aeropuertos.
- Fuente propia.
 \end_layout
 
 \end_inset
@@ -3940,7 +3977,7 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename img/1_aeropuertos_clasificados_vista.png
-	lyxscale 50
+	lyxscale 75
 	width 100text%
 
 \end_inset
@@ -3953,7 +3990,6 @@ status open
 
 \begin_layout Plain Layout
 Aeropuertos clasificados por tipo.
- Fuente propia.
 \end_layout
 
 \end_inset
@@ -4028,7 +4064,7 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename img/1_roads_categorizado.png
-	lyxscale 50
+	lyxscale 75
 	width 100text%
 
 \end_inset
@@ -4042,7 +4078,6 @@ status open
 \begin_layout Plain Layout
 Ejemplo de rutas y caminos (roads) categorizados por rampa de color.
  El grosor de línea se modificó a 0.5 para que contraste más con el fondo.
- Fuente propia.
 \end_layout
 
 \end_inset
@@ -4080,7 +4115,7 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename img/1_densidad_paises.png
-	lyxscale 50
+	lyxscale 75
 	width 100text%
 
 \end_inset
@@ -4093,7 +4128,6 @@ status open
 
 \begin_layout Plain Layout
 Mapa temático que representa la densidad poblacional de cada país.
- Fuente propia.
 \end_layout
 
 \end_inset
@@ -4223,7 +4257,7 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename img/1_etiquetado.png
-	lyxscale 50
+	lyxscale 75
 	width 100text%
 
 \end_inset
@@ -4236,8 +4270,6 @@ status open
 
 \begin_layout Plain Layout
 Etiquetado básico.
- Base OSM.
- Fuente propia.
 \end_layout
 
 \end_inset
@@ -4338,7 +4370,7 @@ status open
 \begin_inset Graphics
 	filename img/1_etiquetas_africa.png
 	lyxscale 50
-	scale 50
+	height 6cm
 
 \end_inset
 
@@ -4352,8 +4384,6 @@ status open
 Etiquetado avanzado.
  Se muestran todas las etiquetas centradas y se les aplica efectos de buffer
  y sombras para visualizar mejor -por contraste- cada nombre.
- Base OSM.
- Fuente propia.
 \end_layout
 
 \end_inset
@@ -4395,8 +4425,7 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename img/1_representacion_de_capas.png
-	lyxscale 50
-	scale 50
+	height 3cm
 	rotateOrigin leftBaseline
 
 \end_inset
@@ -4405,7 +4434,7 @@ status open
 \begin_inset Graphics
 	filename img/1_transparencia.png
 	lyxscale 50
-	scale 50
+	height 6cm
 	rotateOrigin rightBaseline
 
 \end_inset
@@ -4418,8 +4447,6 @@ status open
 
 \begin_layout Plain Layout
 Configuración de transparencia de capa.
- Base OSM.
- Fuente propia.
 \end_layout
 
 \end_inset
@@ -4656,8 +4683,6 @@ status open
 
 \begin_layout Plain Layout
 Selección de estilos.
- Base OSM.
- Fuente propia.
 \end_layout
 
 \end_inset
@@ -4804,7 +4829,7 @@ status open
 \begin_inset Graphics
 	filename img/1_tabla_tipo_dato.png
 	lyxscale 50
-	scale 60
+	height 5cm
 
 \end_inset
 
@@ -4832,7 +4857,6 @@ Cadena de texto
 \end_inset
 
  con 200 caracteres de longitud.
- Fuente propia.
 \end_layout
 
 \end_inset
@@ -4887,7 +4911,7 @@ status open
 \begin_inset Graphics
 	filename img/1_vista_tabla_formulario.png
 	lyxscale 50
-	scale 60
+	height 5cm
 
 \end_inset
 
@@ -4900,7 +4924,6 @@ status open
 \begin_layout Plain Layout
 Vista tipo formulario.
  Permite filtrados rápidos y una vista más centrada en el objeto.
- Fuente propia.
 \end_layout
 
 \end_inset
@@ -4978,7 +5001,7 @@ status open
 \begin_inset Graphics
 	filename img/1_reordenando_campos.png
 	lyxscale 50
-	scale 60
+	height 6cm
 
 \end_inset
 
@@ -4991,7 +5014,6 @@ status open
 \begin_layout Plain Layout
 Se pueden desactivar capas y ordenarlas para que se visualicen de la forma
  que más convenga.
- Fuente propia.
 \end_layout
 
 \end_inset
@@ -5036,7 +5058,7 @@ Los filtros funcionan de forma similar a las planillas de cálculo, permiten
 \end_layout
 
 \begin_layout Standard
-Qgis ofrece la posibilidad de filtrar y mostrar en la tabla solo los objetos
+QGIS ofrece la posibilidad de filtrar y mostrar en la tabla solo los objetos
  que están actualmente seleccionados o que presentan algún atributo en particula
 r.
  Dicha característica se activa desde el botón que se encuentra abajo a
@@ -5119,7 +5141,7 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename img/1_opciones_filtro_tabla.png
-	lyxscale 50
+	lyxscale 75
 	width 100text%
 
 \end_inset
@@ -5139,8 +5161,6 @@ name "fig:Filtrado-de-tabla"
 \end_inset
 
 .
- Base OSM.
- Fuente propia.
 \end_layout
 
 \end_inset
@@ -5166,7 +5186,7 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename img/1_aeropuerto_astor.png
-	lyxscale 50
+	lyxscale 75
 	width 100text%
 
 \end_inset
@@ -5189,8 +5209,6 @@ name
 : Astor Piazolla.
  Luego del filtrado se utilizó el botón que permite acercar el mapa a las
  filas seleccionadas.
- Base OSM.
- Fuente propia.
  
 \end_layout
 
@@ -5265,8 +5283,8 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename img/1_distancia_cor_ros.png
-	lyxscale 50
-	width 75text%
+	lyxscale 75
+	width 100text%
 
 \end_inset
 
@@ -5278,8 +5296,6 @@ status open
 
 \begin_layout Plain Layout
 Distancia entre los aeropuertos de la ciudad de Rosario y Córdoba (Argentina).
- Base OSM.
- Fuente propia.
 \end_layout
 
 \end_inset
@@ -5312,7 +5328,7 @@ Exportar mapa
 A veces necesitamos incrustar en un documento de texto mapas ilustrativos.
  Generalmente el procedimiento incluye un “pantallazo” que luego (con edición
  o sin ella) se pega en el documento.
- Qgis provee una herramienta muy útil para ésto, que es la exportación de
+ QGIS provee una herramienta muy útil para ésto, que es la exportación de
  la vista gráfica a un formato de imagen.
  A esta característica se accede mediante el menú “Proyecto” 
 \begin_inset Formula $\rightarrow$
@@ -5364,8 +5380,8 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename img/1_aeropuertos_caribe.png
-	lyxscale 50
-	width 75text%
+	lyxscale 75
+	height 6cm
 
 \end_inset
 
@@ -5379,8 +5395,8 @@ status open
 Salida de exportación de los Aeropuertos del Caribe.
  Se configuró la fuente tipográfica de la etiqueta de título de color blanco
  para que contraste con el color negro (con transparencia), se añadió una
- etiqueta de copyright, barra de escala y flecha de norte (texto con buffer).
- Fuente propia.
+ etiqueta de copyright, barra de escala, cuadrícula y flecha de norte (texto
+ con buffer).
 \end_layout
 
 \end_inset
@@ -5476,8 +5492,8 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename img/1_anotaciones.png
-	lyxscale 50
-	scale 60
+	lyxscale 75
+	height 6cm
 
 \end_inset
 
@@ -5489,7 +5505,6 @@ status open
 
 \begin_layout Plain Layout
 Anotaciones.
- Fuente propia.
 \end_layout
 
 \end_inset
@@ -5535,8 +5550,8 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename img/1_aviso_mapa_kennedy.png
-	lyxscale 50
-	scale 60
+	lyxscale 75
+	height 6cm
 
 \end_inset
 
@@ -5548,7 +5563,6 @@ status open
 
 \begin_layout Plain Layout
 Avisos de mapa.
- Fuente propia.
 \end_layout
 
 \end_inset
@@ -5570,7 +5584,7 @@ Localizador
 \end_layout
 
 \begin_layout Standard
-Qgis incorporó una herramienta muy interesante y práctica a partir de las
+QGIS incorporó una herramienta muy interesante y práctica a partir de las
  nuevas versiones, el 
 \begin_inset Quotes cld
 \end_inset
@@ -5602,7 +5616,7 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename img/2_localizador.png
-	height 5cm
+	height 8cm
 
 \end_inset
 
@@ -5614,7 +5628,6 @@ status open
 
 \begin_layout Plain Layout
 Localizador.
- Fuente propia.
 \end_layout
 
 \end_inset
@@ -5768,7 +5781,7 @@ set
 \end_layout
 
 \begin_layout Itemize
-También es posible acceder a cualquier acción dentro de Qgis con el prefijo
+También es posible acceder a cualquier acción dentro de QGIS con el prefijo
  
 \begin_inset Quotes cld
 \end_inset
@@ -6059,7 +6072,7 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename img/3_edicion_bermudas.png
-	lyxscale 50
+	lyxscale 75
 	width 100text%
 
 \end_inset
@@ -6081,7 +6094,6 @@ name_es
 
 .
  Isla de las Bermudas.
- Fuente propia.
 \end_layout
 
 \end_inset
@@ -6127,8 +6139,8 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename img/3_aranuka.png
-	lyxscale 50
-	scale 75
+	lyxscale 75
+	width 100text%
 
 \end_inset
 
@@ -6148,7 +6160,6 @@ literal "false"
 \end_inset
 
 , en el océano Pacífico.
- Fuente propia.
 \end_layout
 
 \end_inset
@@ -6210,8 +6221,7 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename img/3_wikipedia.png
-	lyxscale 50
-	scale 60
+	height 3cm
 
 \end_inset
 
@@ -6232,7 +6242,6 @@ Texto o cadena
 \end_inset
 
  y tiene como longitud máxima 250 de caracteres.
- Fuente propia.
 \end_layout
 
 \end_inset
@@ -6259,8 +6268,7 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename img/3_wikipedia_tabla.png
-	lyxscale 50
-	scale 75
+	width 100text%
 
 \end_inset
 
@@ -6280,7 +6288,6 @@ wikipedia
 \end_inset
 
  de la capa de puntos.
- Fuente propia.
 \end_layout
 
 \end_inset
@@ -6378,8 +6385,8 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename img/3_el_palomar.png
-	lyxscale 50
-	width 199text%
+	lyxscale 75
+	width 100text%
 
 \end_inset
 
@@ -6409,8 +6416,6 @@ literal "false"
 \end_inset
 
 .
- Base OSM.
- Fuente propia.
 \end_layout
 
 \end_inset
@@ -6533,8 +6538,7 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename img/3_mover.png
-	lyxscale 50
-	scale 60
+	height 5cm
 
 \end_inset
 
@@ -6546,8 +6550,6 @@ status open
 
 \begin_layout Plain Layout
 Mover un objeto de lugar.
- Base OSM.
- Fuente propia.
 \end_layout
 
 \end_inset
@@ -6755,7 +6757,6 @@ status open
 \begin_layout Plain Layout
 Modificar un trayecto.
  Cada nodo se desplazó sobre la línea de base de OSM.
- Fuente propia.
  
 \end_layout
 
@@ -6796,7 +6797,7 @@ status open
 \begin_inset Graphics
 	filename img/3_edicion_linea_4.png
 	lyxscale 50
-	scale 60
+	height 5cm
 
 \end_inset
 
@@ -6808,8 +6809,6 @@ status open
 
 \begin_layout Plain Layout
 Es posible agregar nodos con doble clic sobre la linea.
- Base OSM.
- Fuente propia.
 \end_layout
 
 \end_inset
@@ -6890,8 +6889,6 @@ supr
 \end_inset
 
 .
- Base OSM.
- Fuente propia.
  
 \end_layout
 
@@ -6962,8 +6959,7 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename img/3_lineas_no_conectadas.png
-	lyxscale 50
-	scale 60
+	height 2cm
 
 \end_inset
 
@@ -6975,7 +6971,6 @@ status open
 
 \begin_layout Plain Layout
 Lineas no conectadas.
- Fuente propia.
 \end_layout
 
 \end_inset
@@ -7054,8 +7049,7 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename img/3_lineas_conectadas.png
-	lyxscale 50
-	scale 60
+	height 2cm
 
 \end_inset
 
@@ -7067,7 +7061,6 @@ status open
 
 \begin_layout Plain Layout
 Lineas conectadas.
- Fuente propia.
 \end_layout
 
 \end_inset
@@ -7117,7 +7110,6 @@ status open
 \begin_layout Plain Layout
 Barra de autoensamblado.
  Snap para todas las capas, a vértices con distancia de 12px.
- Fuente propia.
 \end_layout
 
 \end_inset
@@ -7174,7 +7166,7 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename img/3_agregado_linea.png
-	lyxscale 50
+	lyxscale 75
 	width 100text%
 
 \end_inset
@@ -7187,7 +7179,6 @@ status open
 
 \begin_layout Plain Layout
 Agregado de ruta con base OSM y snap activado.
- Fuente propia.
 \end_layout
 
 \end_inset
@@ -7260,7 +7251,7 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename img/3_edicion_poligono.png
-	lyxscale 50
+	lyxscale 75
 	width 100text%
 
 \end_inset
@@ -7273,8 +7264,7 @@ status open
 
 \begin_layout Plain Layout
 Edición de polígonos.
- Los nodos se ajustan uno a uno con la imagen de base OSM.
- Fuente propia.
+ Los nodos se ajustan uno a uno con la imagen de
 \end_layout
 
 \end_inset
@@ -7319,7 +7309,7 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename img/3_poligono_isla.png
-	lyxscale 50
+	lyxscale 75
 	width 100text%
 
 \end_inset
@@ -7340,8 +7330,6 @@ Isla Fuerte
 \end_inset
 
 , Colombia.
- Base OSM.
- Fuente propia.
 \end_layout
 
 \end_inset
@@ -7428,7 +7416,6 @@ Digitalización avanzada
 \end_inset
 
 .
- Fuente propia.
 \end_layout
 
 \end_inset
@@ -7477,8 +7464,7 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename img/3_lago_anillo.png
-	lyxscale 50
-	scale 60
+	height 5cm
 
 \end_inset
 
@@ -7490,8 +7476,6 @@ status open
 
 \begin_layout Plain Layout
 Agregado de un lago en una isla.
- Base OSM.
- Fuente propia.
 \end_layout
 
 \end_inset
@@ -7552,7 +7536,7 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename img/3_dividir_bs_as.png
-	lyxscale 50
+	lyxscale 75
 	width 100text%
 
 \end_inset
@@ -7565,8 +7549,6 @@ status open
 
 \begin_layout Plain Layout
 Recortando silueta de la provincia de Buenos Aires, Argentina.
- Base OSM.
- Fuente propia.
 \end_layout
 
 \end_inset
@@ -7607,8 +7589,8 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename img/3_dividir_linea.png
-	lyxscale 50
-	scale 60
+	lyxscale 75
+	height 5cm
 
 \end_inset
 
@@ -7629,7 +7611,6 @@ zig-zag
 \end_inset
 
 .
- Fuente propia.
 \end_layout
 
 \end_inset
@@ -7712,8 +7693,6 @@ status open
 \begin_layout Plain Layout
 Remodelando el límite de costa en la Bahía de San Borombón, buenos Aires,
  Argentina.
- Base OSM.
- Fuente Propia.
 \end_layout
 
 \end_inset
@@ -7756,8 +7735,7 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename img/3_recortar.png
-	lyxscale 50
-	scale 60
+	height 2cm
 
 \end_inset
 
@@ -7769,7 +7747,6 @@ status open
 
 \begin_layout Plain Layout
 En la secuencia, la linea negra es recortada por la roja.
- Fuente propia.
 \end_layout
 
 \end_inset
@@ -7800,8 +7777,7 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename img/3_extender.png
-	lyxscale 50
-	scale 50
+	height 2cm
 
 \end_inset
 
@@ -7813,7 +7789,6 @@ status open
 
 \begin_layout Plain Layout
 La linea negra se extiende hasta la roja.
- Fuente propia.
 \end_layout
 
 \end_inset
@@ -7844,7 +7819,7 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename img/3_autoensamblado_vertice_segmento.png
-	scale 80
+	height 2cm
 
 \end_inset
 
@@ -7872,7 +7847,6 @@ Segmento
 \end_inset
 
 .
- Fuente propia.
 \end_layout
 
 \end_inset
@@ -7890,7 +7864,7 @@ Segmento
 \end_layout
 
 \begin_layout Standard
-Qgis permite recortar y extender lineas (simples o lados de polígonos) seleccion
+QGIS permite recortar y extender lineas (simples o lados de polígonos) seleccion
 ando una y otra geometría.
  A tener en cuenta, la primer geometría seleccionada es la que recorta y
  extiende, y la segunda es la recortada o extendida.
@@ -8307,7 +8281,7 @@ El paquete GeoPackage es una de las mejores opciones para guardar una o
 status open
 
 \begin_layout Quotation
-En esta parte del manual se utilizó una nueva versión de Qgis, la 3.16 en
+En esta parte del manual se utilizó una nueva versión de QGIS, la 3.16 en
  modo oscuro, lo cual no afecta en nada el uso de ninguna de las herramientas
  aquí descritas.
 \end_layout
@@ -8326,7 +8300,8 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename img/3_nueva_capa_vectorial.png
-	scale 50
+	lyxscale 75
+	height 8cm
 
 \end_inset
 
@@ -8339,7 +8314,6 @@ status open
 \begin_layout Plain Layout
 Nueva capa GeoPackage.
  A modo de ejemplo, se configuraron algunos campos.
- Fuente propia.
  
 \end_layout
 
@@ -8391,7 +8365,7 @@ Capa borrador temporal
 \end_layout
 
 \begin_layout Standard
-Las nuevas versiones de Qgis tienen una herramienta que es ideal cuando
+Las nuevas versiones de QGIS tienen una herramienta que es ideal cuando
  no necesitamos guardar, de momento, la capa vectorial que queremos trabajar.
  Esta capa se encuentra en el mismo menú que la anterior y solo nos pedirá
  el tipo de objeto que queremos representar.
@@ -8399,7 +8373,7 @@ Las nuevas versiones de Qgis tienen una herramienta que es ideal cuando
 
 \begin_layout Standard
 La capa Borrador Temporal es precisamente eso, una capa que queda en la
- memoria mientras Qgis esté abierto, por lo que si no guardamos los cambios
+ memoria mientras QGIS esté abierto, por lo que si no guardamos los cambios
  en un GeoPackage u otro soporte se perderán sus datos.
  En el caso de querer hacer permanente la capa temporal se deberá hacer
  clic derecho sobre la capa 
@@ -8434,7 +8408,7 @@ datos de los datos
 \end_inset
 
 .
- Qgis tiene en las propiedades de capa un apartado bastante completo para
+ QGIS tiene en las propiedades de capa un apartado bastante completo para
  metadatos.
 \end_layout
 
@@ -8447,7 +8421,8 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename img/3_metadatos.png
-	scale 50
+	lyxscale 75
+	height 10cm
 
 \end_inset
 
@@ -8459,7 +8434,6 @@ status open
 
 \begin_layout Plain Layout
 Los metadatos se configuran en las propiedades de capa.
- Fuente propia.
 \end_layout
 
 \end_inset
@@ -8743,6 +8717,7 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename img/4_formato_hojas.png
+	lyxscale 75
 	height 10cm
 
 \end_inset
@@ -8804,7 +8779,6 @@ status open
 
 \begin_layout Plain Layout
 Recuadro de hoja.
- Fuente Propia.
 \end_layout
 
 \end_inset
@@ -8827,7 +8801,6 @@ Mapa base.
  en particular.
  Las características del mismo, como la simbología, escala, colores, etc.,
  se detallarán más adelante con mayor detalle.
- Hay que decir que a veces pueden existir varios mapas en una misma composición.
 \end_layout
 
 \begin_layout Standard
@@ -8839,6 +8812,7 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename img/4_mapa_base.png
+	lyxscale 50
 	height 4cm
 
 \end_inset
@@ -8846,6 +8820,7 @@ status open
 
 \begin_inset Graphics
 	filename img/4_mapas_base.png
+	lyxscale 50
 	height 4cm
 
 \end_inset
@@ -8858,7 +8833,7 @@ status open
 
 \begin_layout Plain Layout
 Mapa base.
- Fuente propia.
+ La segunda composición contiene varios mapas.
 \end_layout
 
 \end_inset
@@ -8898,7 +8873,7 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename img/4_rotulo_cordoba.png
-	height 4cm
+	height 3cm
 
 \end_inset
 
@@ -9019,6 +8994,7 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename img/4_variables_visuales.png
+	lyxscale 50
 	height 3cm
 
 \end_inset
@@ -9031,7 +9007,6 @@ status open
 
 \begin_layout Plain Layout
 Variables que pueden distinguirse visualmente.
- Fuente propia.
 \end_layout
 
 \end_inset
@@ -9078,6 +9053,7 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename img/4_tamanio.png
+	lyxscale 75
 	height 6cm
 
 \end_inset
@@ -9091,7 +9067,6 @@ status open
 \begin_layout Plain Layout
 Grandes centros urbanos categorizados por cantidad de habitantes.
  Sin referencias, a modo de ejemplo.
- Fuente propia.
 \end_layout
 
 \end_inset
@@ -9125,7 +9100,8 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename img/4_poblaciones_provincia_tamanio.png
-	height 8cm
+	lyxscale 75
+	height 6cm
 
 \end_inset
 
@@ -9137,7 +9113,6 @@ status open
 
 \begin_layout Plain Layout
 Localidades por importancia y coloreados según la provincia a la que pertenecen.
- Fuente propia.
 \end_layout
 
 \end_inset
@@ -9156,7 +9131,7 @@ Localidades por importancia y coloreados según la provincia a la que pertenecen
 
 \begin_layout Standard
 Por último hay que decir que la combinación de variables visuales responderá
- a las necesidades de lo que se quiera comunicar, y Qgis estará a la altura
+ a las necesidades de lo que se quiera comunicar, y QGIS estará a la altura
  de eso, ya que tiene un potente editor de estilos y etiquetas, y con cada
  versión nueva agrega mayores capacidades, por lo que se recomienda explorar
  las distintas combinaciones que pueden realizarse para mejorar la salida
@@ -9201,7 +9176,8 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename img/4_salida_grafica.png
-	height 6cm
+	lyxscale 75
+	width 50text%
 
 \end_inset
 
@@ -9213,7 +9189,6 @@ status open
 
 \begin_layout Plain Layout
 Nueva composición vacía.
- Fuente propia.
 \end_layout
 
 \end_inset
@@ -9294,7 +9269,7 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename img/4_propiedades_de_pagina.png
-	scale 50
+	height 4cm
 
 \end_inset
 
@@ -9390,7 +9365,8 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename img/4_guias.png
-	height 8cm
+	lyxscale 75
+	width 100text%
 
 \end_inset
 
@@ -9402,7 +9378,6 @@ status open
 
 \begin_layout Plain Layout
 Guías en una hoja A4, márgenes a 10cm.
- Fuente propia.
 \end_layout
 
 \end_inset
@@ -9453,7 +9428,8 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename img/4_mapa.png
-	height 8cm
+	lyxscale 75
+	width 100text%
 
 \end_inset
 
@@ -9466,7 +9442,6 @@ status open
 \begin_layout Plain Layout
 Añadir mapa al papel.
  En este caso se utilizaron guías.
- Fuente propia.
 \end_layout
 
 \end_inset
@@ -9487,7 +9462,7 @@ Añadir mapa al papel.
 Entre las propiedades principales se encuentran la escala, rotación y SRC.
  Por defecto, la escala se auto-calcula de acuerdo al contenido del mapa,
  ya que toma la misma extensión que la vista gráfica en la ventana principal
- de Qgis, sin embargo es posible indicar la escala numéricamente o bien
+ de QGIS, sin embargo es posible indicar la escala numéricamente o bien
  utilizando la herramienta
 \begin_inset Graphics
 	filename img/4_icon_desplazar_mapa.png
@@ -9520,7 +9495,7 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename img/4_marco_mapa.png
-	height 3cm
+	height 2cm
 
 \end_inset
 
@@ -9532,7 +9507,6 @@ status open
 
 \begin_layout Plain Layout
 Configuración de marco de mapa.
- Fuente propia.
 \end_layout
 
 \end_inset
@@ -9571,7 +9545,8 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename img/4_mapa_general.png
-	height 8cm
+	lyxscale 75
+	width 100text%
 
 \end_inset
 
@@ -9584,7 +9559,6 @@ status open
 \begin_layout Plain Layout
 Vista de mapa general.
  Se muestra Sudamérica como mapa de referencia.
- Fuente propia.
 \end_layout
 
 \end_inset
@@ -9672,7 +9646,6 @@ status open
 \begin_layout Plain Layout
 Añadido de leyenda.
  Se muestran todas las leyendas de mapa.
- Fuente propia.
 \end_layout
 
 \end_inset
@@ -9690,7 +9663,7 @@ Añadido de leyenda.
 \end_layout
 
 \begin_layout Standard
-Como Qgis no sabe qué leyenda queremos mostrar, las muestra todas.
+Como QGIS no sabe qué leyenda queremos mostrar, las muestra todas.
  Para dejar solo las que nos interesa, destildamos la opción 
 \begin_inset Quotes cld
 \end_inset
@@ -9739,7 +9712,8 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename img/4_leyenda_2.png
-	height 6cm
+	lyxscale 75
+	width 100text%
 
 \end_inset
 
@@ -9751,7 +9725,6 @@ status open
 
 \begin_layout Plain Layout
 Se muestra solo la leyenda de la capa de ciudades.
- Fuente propia.
 \end_layout
 
 \end_inset
@@ -9790,7 +9763,8 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename img/4_mapa_problema.png
-	height 8cm
+	lyxscale 75
+	width 100text%
 
 \end_inset
 
@@ -9802,7 +9776,6 @@ status open
 
 \begin_layout Plain Layout
 Ahora las ciudades se muestran solo en el mapa principal.
- Fuente propia.
 \end_layout
 
 \end_inset
@@ -9816,7 +9789,7 @@ Ahora las ciudades se muestran solo en el mapa principal.
 \end_layout
 
 \begin_layout Standard
-Ahora, si en la ventana principal de Qgis se modifica el estilo o se prende/apag
+Ahora, si en la ventana principal de QGIS se modifica el estilo o se prende/apag
 a alguna capa no se modifica lo que se ve en la ventana de composición,
  porque la hemos bloqueado.
 \end_layout
@@ -9839,7 +9812,7 @@ d existente con las dimensiones reales del territorio.
  Una escala 1:1 significa que el plano está dibujado en tamaño real, en
  cambio 1:100 implica que 1 unidad en el mapa representa 100 unidades en
  la realidad.
- Qgis calcula y actualiza automáticamente la barra de escala, que podremos
+ QGIS calcula y actualiza automáticamente la barra de escala, que podremos
  incorporarla al plano en el lugar que nos parezca más apropiado (
 \begin_inset Graphics
 	filename img/4_icon_escala.png
@@ -9859,7 +9832,8 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename img/4_mapa_escala.png
-	height 8cm
+	lyxscale 75
+	width 100text%
 
 \end_inset
 
@@ -9871,7 +9845,6 @@ status open
 
 \begin_layout Plain Layout
 Mapa con barra de escala.
- Fuente propia.
 \end_layout
 
 \end_inset
@@ -9927,10 +9900,11 @@ En general se espera que un mapa siempre esté orientado de forma que el
 \end_layout
 
 \begin_layout Standard
-A partir de las nuevas versiones de Qgis, es posible añadir un indicador
+A partir de las nuevas versiones de QGIS, es posible añadir un indicador
  de Norte muy fácilmente (
 \begin_inset Graphics
 	filename img/4_icon_norte.png
+	height 12pt
 
 \end_inset
 
@@ -9946,7 +9920,8 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename img/4_mapa_norte.png
-	height 8cm
+	lyxscale 75
+	width 100text%
 
 \end_inset
 
@@ -9958,7 +9933,6 @@ status open
 
 \begin_layout Plain Layout
 Norte.
- Fuente propia.
 \end_layout
 
 \end_inset
@@ -10017,7 +9991,8 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename img/4_marco_caratula.png
-	height 6cm
+	lyxscale 75
+	height 7cm
 
 \end_inset
 
@@ -10029,7 +10004,6 @@ status open
 
 \begin_layout Plain Layout
 Marco de carátula.
- Fuente propia.
 \end_layout
 
 \end_inset
@@ -10067,7 +10041,8 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename img/4_mapa_rotulo.png
-	height 8cm
+	lyxscale 75
+	width 100text%
 
 \end_inset
 
@@ -10079,7 +10054,6 @@ status open
 
 \begin_layout Plain Layout
 Rótulo o Carátula de Mapa.
- Fuente propia.
 \end_layout
 
 \end_inset
@@ -10130,7 +10104,8 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename img/4_mapa_imagen.png
-	height 8cm
+	lyxscale 75
+	width 100text%
 
 \end_inset
 
@@ -10142,7 +10117,7 @@ status open
 
 \begin_layout Plain Layout
 Añadido de imagen al mapa.
- Imagen de logo OSM ©OpenStreetMap, fuente propia.
+ Imagen de logo OSM ©OpenStreetMap,
 \end_layout
 
 \end_inset
@@ -10178,7 +10153,7 @@ Exportación del mapa
 \end_layout
 
 \begin_layout Standard
-Qgis permite exportar mapas a diferentes formatos: Imágen ráster (PNG, JPG,
+QGIS permite exportar mapas a diferentes formatos: Imágen ráster (PNG, JPG,
  etc), vectorial (SVG) y Postscript (PDF), mediante la botonera 
 \begin_inset Graphics
 	filename img/4_icon_exportar.png
@@ -10211,7 +10186,7 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename img/4_exportacion_pdf.png
-	height 6cm
+	height 10cm
 
 \end_inset
 
@@ -10223,7 +10198,6 @@ status open
 
 \begin_layout Plain Layout
 Exportación PDF.
- Fuente propia.
 \end_layout
 
 \end_inset
@@ -10241,7 +10215,7 @@ Exportación PDF.
 \end_layout
 
 \begin_layout Standard
-Para el caso de la exportación a PDF, Qgis permite forzar a que el contenido
+Para el caso de la exportación a PDF, QGIS permite forzar a que el contenido
  vectorial de nuestro mapa se exporta en igual formato, o que se agregue
  información como metadatos, Georreferencia para los mapas, forma en que
  se exportan los textos, etc.
@@ -10547,7 +10521,7 @@ name "chap:Análisis"
 
 \begin_layout Standard
 El quinto y último nivel está pensado para aquellos que quieren profundizar
- aún más en el manejo de Sistemas de Información Geográfica con Qgis.
+ aún más en el manejo de Sistemas de Información Geográfica con QGIS.
  El objetivo es poder diseñar análisis con herramientas más avanzadas, por
  ejemplo, combinando datos de distintas capas.
  Para avanzar en este nivel se necesitará tener práctica suficiente sobre
@@ -10674,7 +10648,7 @@ SCALERANK
 \end_inset
 
 .
- En las nuevas versiones de Qgis es muy fácil hacer esto haciendo clic en
+ En las nuevas versiones de QGIS es muy fácil hacer esto haciendo clic en
  el botón (
 \begin_inset Graphics
 	filename img/5_icon_seleccion_atributo.png
@@ -10702,7 +10676,7 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename img/5_seleccion_atributo.png
-	height 6cm
+	height 8cm
 
 \end_inset
 
@@ -10714,7 +10688,6 @@ status open
 
 \begin_layout Plain Layout
 Selección por atributo.
- Fuente propia.
 \end_layout
 
 \end_inset
@@ -10790,7 +10763,7 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename img/5_seleccion_expresion.png
-	height 12pt
+	height 10cm
 
 \end_inset
 
@@ -10803,7 +10776,6 @@ status open
 \begin_layout Plain Layout
 Selección por expresión, donde se evalúa la longitud de caracteres en el
  campo nombre para que sea menor a 5.
- Fuente propia.
 \end_layout
 
 \end_inset
@@ -10875,7 +10847,8 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename img/5_seleccion_uruguay.png
-	height 6cm
+	lyxscale 75
+	height 8cm
 
 \end_inset
 
@@ -10887,7 +10860,6 @@ status open
 
 \begin_layout Plain Layout
 Ciudades que se encuentran dentro del polígono que ocupa Uruguay.
- Fuente propia.
 \end_layout
 
 \end_inset
@@ -10961,7 +10933,7 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename img/5_seleccion_aleatoria_subconjunto.png
-	height 6cm
+	height 10cm
 
 \end_inset
 
@@ -10973,7 +10945,6 @@ status open
 
 \begin_layout Plain Layout
 Selección aleatoria dentro de subconjuntos.
- Fuente propia.
 \end_layout
 
 \end_inset
@@ -11029,7 +11000,7 @@ Formato condicional en tablas
 
 \begin_layout Standard
 Al igual que en cualquier planilla de cálculo tradicional es posible aquí
- también en Qgis dar formatos condicionales a las tablas de cualquier capa
+ también en QGIS dar formatos condicionales a las tablas de cualquier capa
  del proyecto.
  Su funcionamiento se basa en reglas, para campos en particular o filas
  completas.
@@ -11066,7 +11037,7 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename img/5_formato_condicional_campo.png
-	height 6cm
+	width 100text%
 
 \end_inset
 
@@ -11078,7 +11049,6 @@ status open
 
 \begin_layout Plain Layout
 Formato condicional en Campo.
- Fuente propia.
 \end_layout
 
 \end_inset
@@ -11162,7 +11132,7 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename img/5_formato_condicional_fila.png
-	height 6cm
+	width 100text%
 
 \end_inset
 
@@ -11174,7 +11144,6 @@ status open
 
 \begin_layout Plain Layout
 Formato condicional en Fila.
- Fuente propia.
 \end_layout
 
 \end_inset
@@ -11221,7 +11190,7 @@ join
 \end_inset
 
  entre tablas se hereda de la filosofía del mundo de la programación, y
- en Qgis trata de emular de alguna manera el mismo concepto, aunque con
+ en QGIS trata de emular de alguna manera el mismo concepto, aunque con
  sus adaptaciones.
  Tenemos dos formas nativas: unión entre una tabla y otra en relación uno
  a uno, y relación entre dos tablas de uno a muchos.
@@ -11252,7 +11221,7 @@ id
 \end_inset
 
  y otros datos adicionales.
- Qgis puede realizar una unión temporal entre esas tablas de forma que los
+ QGIS puede realizar una unión temporal entre esas tablas de forma que los
  puntos y la planilla de cálculo se relacionen uno a uno.
 \end_layout
 
@@ -11265,7 +11234,7 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename img/5_join_tabla.png
-	height 4cm
+	height 3cm
 
 \end_inset
 
@@ -11277,7 +11246,6 @@ status open
 
 \begin_layout Plain Layout
 Unión de una tabla sin geometría con otra de puntos.
- Fuente Propia.
 \end_layout
 
 \end_inset
@@ -11306,7 +11274,7 @@ Nota: Las uniones no tienen por qué ser completas, es decir, que pueden
  darse registros que no se unen con ningún otro porque no existe un identificado
 r coincidente.
  Y en el caso de que un identificador en la segunda tabla esté repetido,
- Qgis tomará la unión con el primer registro coincidente, descartando a
+ QGIS tomará la unión con el primer registro coincidente, descartando a
  los demás que pudieran existir en la tabla.
 \end_layout
 
@@ -11376,7 +11344,7 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename img/5_union_ciudad_pais_.png
-	height 6cm
+	height 10cm
 
 \end_inset
 
@@ -11405,7 +11373,6 @@ ADM0NAME
 \end_inset
 
 .
- Fuente propia.
 \end_layout
 
 \end_inset
@@ -11433,7 +11400,8 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename img/5_consulta_union.png
-	height 6cm
+	lyxscale 75
+	height 10cm
 
 \end_inset
 
@@ -11445,7 +11413,6 @@ status open
 
 \begin_layout Plain Layout
 Consulta de datos de la ciudad vinculada con su país.
- Fuente propia.
 \end_layout
 
 \end_inset
@@ -11573,7 +11540,6 @@ status open
 
 \begin_layout Plain Layout
 Relación de uno a muchos.
- Fuente propia.
 \end_layout
 
 \end_inset
@@ -11609,7 +11575,7 @@ clave-id
 \end_layout
 
 \begin_layout Standard
-En Qgis este tipo de relaciones se establece desde las propiedades del proyecto.
+En QGIS este tipo de relaciones se establece desde las propiedades del proyecto.
  Pongamos por caso que al consultar la capa de países (countries) nos muestre
  también todas las ciudades (populated_places) que se relacionan con el
  mismo mediante el campo 
@@ -11683,7 +11649,7 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename img/5_relacion_tablas.png
-	height 4cm
+	height 6cm
 
 \end_inset
 
@@ -11711,7 +11677,6 @@ populated_places
 \end_inset
 
 .
- Fuente propia.
 \end_layout
 
 \end_inset
@@ -11744,7 +11709,8 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename img/5_relacion_consulta.png
-	height 4cm
+	lyxscale 75
+	height 10cm
 
 \end_inset
 
@@ -11756,7 +11722,6 @@ status open
 
 \begin_layout Plain Layout
 Ciudades en Chile.
- Fuente propia.
 \end_layout
 
 \end_inset
@@ -11803,7 +11768,7 @@ or geográfico.
 \end_layout
 
 \begin_layout Standard
-Qgis, por el momento, no posee una herramienta de geocodificación incluida
+QGIS, por el momento, no posee una herramienta de geocodificación incluida
  en su núcleo, sin embargo es posible utilizar plugins o complementos que
  permitan automatizar el trabajo de geocodificación.
 \end_layout
@@ -12033,7 +11998,7 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename img/5_geocode_google_osm.png
-	height 5cm
+	height 9cm
 
 \end_inset
 
@@ -12045,7 +12010,6 @@ status open
 
 \begin_layout Plain Layout
 Georreferenciación con servicios en linea.
- Fuente propia.
 \end_layout
 
 \end_inset
@@ -12161,7 +12125,7 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename img/5_geocode_callejero.png
-	height 5cm
+	height 9cm
 
 \end_inset
 
@@ -12173,7 +12137,6 @@ status open
 
 \begin_layout Plain Layout
 Georreferenciación con capa callejero local.
- Fuente propia.
 \end_layout
 
 \end_inset
@@ -12226,7 +12189,7 @@ En esta sección aprenderemos a utilizar algunas herramientas de geometría
  y geoprocesos que son utilizadas frecuentemente en el análisis vectorial.
  Trataremos de brindar ejemplos concretos con las capas de datos que disponemos.
  Es posible que se omita de aquí en adelante la localización de cada herramienta
- dentro del programa Qgis, ya que se pueden encontrar dentro de los submenús
+ dentro del programa QGIS, ya que se pueden encontrar dentro de los submenús
  del apartado 
 \begin_inset Quotes cld
 \end_inset
@@ -12263,7 +12226,7 @@ mágica
 \begin_inset Quotes crd
 \end_inset
 
-, que resulta muy útil para el trabajo cotidiano con Qgis.
+, que resulta muy útil para el trabajo cotidiano con QGIS.
 \end_layout
 
 \end_inset
@@ -12276,7 +12239,7 @@ Nota: Algunos de los algoritmos que se describen a continuación pueden ser
  ejecutados de forma que se apliquen directamente sobre la capa de origen
  o bien que generen una nueva capa producto.
  Asimismo las que describimos a partir de este apartado se encuentran en
- el núcleo de Qgis, aunque también es posible que otros proveedores de procesos
+ el núcleo de QGIS, aunque también es posible que otros proveedores de procesos
  puedan brindar funcionalidades similares, como 
 \begin_inset Quotes cld
 \end_inset
@@ -12366,7 +12329,8 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename img/5_reproyectar.png
-	height 6cm
+	lyxscale 75
+	width 100text%
 
 \end_inset
 
@@ -12378,7 +12342,6 @@ status open
 
 \begin_layout Plain Layout
 Reproyección de SRC.
- Fuente propia.
 \end_layout
 
 \end_inset
@@ -12410,7 +12373,7 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename img/5_buffer_50m.png
-	height 6cm
+	height 10cm
 
 \end_inset
 
@@ -12422,7 +12385,6 @@ status open
 
 \begin_layout Plain Layout
 Buffer de 50km sobre la capa de ciudades (reproyectada a EPSG 22174).
- Fuente propia.
  
 \end_layout
 
@@ -12480,14 +12442,20 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename img/5_buffer_50m_resultado.png
-	height 4cm
+	lyxscale 50
+	height 5cm
 
 \end_inset
 
+ 
+\begin_inset Formula $\rightarrow$
+\end_inset
 
+ 
 \begin_inset Graphics
 	filename img/5_buffer_50m_resultado_disuelto.png
-	height 4cm
+	lyxscale 50
+	height 5cm
 
 \end_inset
 
@@ -12503,7 +12471,6 @@ Resultados del buffer, aplicados con un estilo que permiten distinguir el
  Izq, sin disolver.
  Der.
  disuelto.
- Fuente propia.
 \end_layout
 
 \end_inset
@@ -12552,7 +12519,8 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename img/5_buffer_radio_discriminado.png
-	height 6cm
+	lyxscale 75
+	height 10cm
 
 \end_inset
 
@@ -12564,7 +12532,6 @@ status open
 
 \begin_layout Plain Layout
 Diferentes radios por cada objeto.
- Fuente propia.
 \end_layout
 
 \end_inset
@@ -12621,7 +12588,8 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename img/5_buffer_multi_anillo.png
-	height 5cm
+	lyxscale 75
+	height 6cm
 
 \end_inset
 
@@ -12633,7 +12601,6 @@ status open
 
 \begin_layout Plain Layout
 Buffer de 300km segmentado en 3 sectores.
- Fuente propia.
 \end_layout
 
 \end_inset
@@ -12681,7 +12648,7 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename img/5_interseccion.png
-	height 3cm
+	height 2cm
 
 \end_inset
 
@@ -12694,7 +12661,6 @@ status open
 \begin_layout Plain Layout
 Intersección.
  El resultado son los elementos comunes entre las dos geometrías.
- Fuente propia.
 \end_layout
 
 \end_inset
@@ -12751,7 +12717,7 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename img/5_union.png
-	height 3cm
+	height 2cm
 
 \end_inset
 
@@ -12764,7 +12730,6 @@ status open
 \begin_layout Plain Layout
 Unión.
  El resultado es una suma de conjuntos.
- Fuente propia.
 \end_layout
 
 \end_inset
@@ -12806,7 +12771,7 @@ Unión
 
  cada objeto tendrá los campos de atributos de ambas capas, por lo que es
  posible distinguir el origen de capa de cada elemento, y si los nombres
- de campo se repiten entonces Qgis colocará el valor numérico 
+ de campo se repiten entonces QGIS colocará el valor numérico 
 \begin_inset Quotes cld
 \end_inset
 
@@ -12869,7 +12834,7 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename img/5_diferencia_simetrica.png
-	height 3cm
+	height 2cm
 
 \end_inset
 
@@ -12882,7 +12847,6 @@ status open
 \begin_layout Plain Layout
 Diferencia simétrica.
  El resultado es la unión de los conjuntos menos su diferencia.
- Fuente propia.
 \end_layout
 
 \end_inset
@@ -12931,7 +12895,7 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename img/5_diferencia.png
-	height 3cm
+	height 2cm
 
 \end_inset
 
@@ -12944,7 +12908,6 @@ status open
 \begin_layout Plain Layout
 Diferencia.
  El resultado de A menos B es solo lo que está en A y no en B.
- Fuente propia.
 \end_layout
 
 \end_inset
@@ -13009,7 +12972,8 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename img/5_envolvente_convexa.png
-	height 4cm
+	lyxscale 75
+	height 6cm
 
 \end_inset
 
@@ -13021,7 +12985,6 @@ status open
 
 \begin_layout Plain Layout
 Envolvente convexa.
- Fuente propia.
 \end_layout
 
 \end_inset
@@ -13080,7 +13043,8 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename img/5_disolver_continentes.png
-	height 4cm
+	lyxscale 75
+	height 6cm
 
 \end_inset
 
@@ -13092,7 +13056,6 @@ status open
 
 \begin_layout Plain Layout
 Disolver.
- Fuente propia.
 \end_layout
 
 \end_inset
@@ -13132,7 +13095,8 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename img/5_centroides_paises.png
-	height 4cm
+	lyxscale 75
+	height 6cm
 
 \end_inset
 
@@ -13144,7 +13108,6 @@ status open
 
 \begin_layout Plain Layout
 Centroides de países.
- Fuente propia.
 \end_layout
 
 \end_inset
@@ -13360,7 +13323,8 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename img/5_voronoi.png
-	height 4cm
+	lyxscale 75
+	height 5cm
 
 \end_inset
 
@@ -13374,7 +13338,7 @@ status open
 Polígonos de Voronoi.
  Los segmentos en color negro conforman los lados de los polígonos, y son
  las mediatrices de los segmentos que unen pares de puntos vecinos.
- Fuente propia.
+ Gráfica realizada con GeoGebra.
 \end_layout
 
 \end_inset
@@ -13454,7 +13418,8 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename img/5_voronoi_paraguay.png
-	height 6cm
+	lyxscale 75
+	height 8cm
 
 \end_inset
 
@@ -13468,7 +13433,6 @@ status open
 Polígonos de Voronoi.
  Se aplicó un estilo transparente en la capa resultante y se resaltaron
  los límites de la capa de países.
- Fuente propia.
 \end_layout
 
 \end_inset
@@ -13539,7 +13503,8 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename img/5_delaunay.png
-	height 4cm
+	lyxscale 75
+	height 5cm
 
 \end_inset
 
@@ -13554,6 +13519,7 @@ Triangulación de Delaunay.
  Se observa que los lados de los polígonos son precisamente los mismos que
  se generaron para la elaborar los polígonos de Voronoi del ejemplo anterior.Fuen
 te propia.
+ Gráfica realizada con GeoGebra.
 \end_layout
 
 \end_inset
@@ -13584,6 +13550,7 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename img/5_delaunay_paraguay.png
+	lyxscale 75
 	height 6cm
 
 \end_inset
@@ -13596,7 +13563,6 @@ status open
 
 \begin_layout Plain Layout
 Polígonos de Delaunay.
- Fuente propia.
 \end_layout
 
 \end_inset
@@ -13694,7 +13660,8 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename img/5_crear_cuadricula.png
-	height 6cm
+	lyxscale 75
+	height 10cm
 
 \end_inset
 
@@ -13707,7 +13674,6 @@ status open
 \begin_layout Plain Layout
 Crear cuadrícula.
  División de 100 km en horizontal y vertical.
- Fuente propia.
 \end_layout
 
 \end_inset
@@ -13746,7 +13712,8 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename img/5_cuadricula.png
-	height 6cm
+	lyxscale 75
+	height 8cm
 
 \end_inset
 
@@ -13758,7 +13725,6 @@ status open
 
 \begin_layout Plain Layout
 Cuadrícula sobre Portugal y España.
- Fuente Propia.
 \end_layout
 
 \end_inset
@@ -13838,7 +13804,8 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename img/5_coordenadas_medias.png
-	height 4cm
+	lyxscale 75
+	height 8cm
 
 \end_inset
 
@@ -13853,7 +13820,6 @@ Coordenadas medias.
  Los puntos violetas pequeños pertenecen a la capa de ciudades, y los azules
  más grandes a sus respectivos centros de gravedad calculados por grupos
  donde el atributo es el nombre del país al que pertenecen.
- Fuente propia.
 \end_layout
 
 \end_inset
@@ -13928,7 +13894,7 @@ errónea
 \end_layout
 
 \begin_layout Standard
-Se pueden utilizar dos tipos de algoritmos distintos, uno propio de Qgis
+Se pueden utilizar dos tipos de algoritmos distintos, uno propio de QGIS
  y el estándar GEOS.
  Si no se sabe cuál de los dos utilizar, se recomienda dar una pasada por
  cada uno de ellos para detectar todo posible error en la capa.
@@ -13979,7 +13945,7 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename img/5_unir_atributos_localizacion.png
-	height 6cm
+	height 12cm
 
 \end_inset
 
@@ -14008,7 +13974,6 @@ POP_EST
 \end_inset
 
 , donde figura el dato de población total en la capa de países.
- Fuente propia.
 \end_layout
 
 \end_inset
@@ -14081,7 +14046,8 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename img/5_dividir_capa.png
-	height 4cm
+	lyxscale 75
+	height 8cm
 
 \end_inset
 
@@ -14093,7 +14059,6 @@ status open
 
 \begin_layout Plain Layout
 Dividir capa vectorial.
- Fuente propia.
 \end_layout
 
 \end_inset
@@ -14176,7 +14141,8 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename img/5_sinuosidad.png
-	height 6cm
+	lyxscale 75
+	width 100text%
 
 \end_inset
 
@@ -14189,7 +14155,6 @@ status open
 \begin_layout Plain Layout
 Índice de sinuosidad.
  Colores rojizos fuertes indican mayor sinuosidad.
- Fuente propia.
 \end_layout
 
 \end_inset
@@ -14259,7 +14224,7 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename img/5_estadisticas.png
-	height 5cm
+	height 8cm
 
 \end_inset
 
@@ -14271,7 +14236,6 @@ status open
 
 \begin_layout Plain Layout
 Estadísticas básicas para campos.
- Fuente propia.
 \end_layout
 
 \end_inset
@@ -14324,7 +14288,8 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename img/5_estadisticas_categoria.png
-	height 6cm
+	lyxscale 75
+	width 100text%
 
 \end_inset
 
@@ -14336,7 +14301,6 @@ status open
 
 \begin_layout Plain Layout
 Estadísticas por categorías.
- Fuente propia.
 \end_layout
 
 \end_inset
@@ -14439,7 +14403,8 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename img/5_rehacer_campos.png
-	height 6cm
+	lyxscale 75
+	width 100text%
 
 \end_inset
 
@@ -14468,7 +14433,6 @@ labelrank
 \end_inset
 
 .
- Fuente propia.
 \end_layout
 
 \end_inset
@@ -14486,7 +14450,7 @@ labelrank
 \end_layout
 
 \begin_layout Standard
-A diferencia de otras herramientas dentro de Qgis, como añadir y quitar
+A diferencia de otras herramientas dentro de QGIS, como añadir y quitar
  campos, este proceso permite reordenar los campos.
  A nivel de bases de datos, quizás no tenga mucho sentido hacer esto, sin
  embargo, para el trabajo con planillas de cálculo siempre conviene ser
@@ -14545,7 +14509,7 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename img/5_if.png
-	height 6cm
+	height 10cm
 
 \end_inset
 
@@ -14692,7 +14656,7 @@ Case
 \end_inset
 
  no necesita explicitar un valor ELSE, por lo que puede omitirse.
- Qgis evalúa esta condición como NULL.
+ QGIS evalúa esta condición como NULL.
 \end_layout
 
 \begin_layout Subsection
@@ -14722,7 +14686,7 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename img/5_aggregate_tipos_ruta.png
-	height 6cm
+	width 100text%
 
 \end_inset
 
@@ -14734,7 +14698,6 @@ status open
 
 \begin_layout Plain Layout
 Tipos de rutas que pasan por una ciudad.
- Fuente propia.
 \end_layout
 
 \end_inset
@@ -14769,7 +14732,7 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename img/5_aggregate_contador_aeropuertos.png
-	height 6cm
+	width 100text%
 
 \end_inset
 
@@ -14780,9 +14743,8 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Qgis calcula automáticamente en un nuevo campo de la capa de países cuántos
+QGIS calcula automáticamente en un nuevo campo de la capa de países cuántos
  aeropuertos hay en ese territorio.
- Fuente propia.
 \end_layout
 
 \end_inset
@@ -14909,14 +14871,19 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename img/5_concat.png
-	height 6cm
+	width 100text%
 
 \end_inset
 
 
+\end_layout
+
+\begin_layout Plain Layout
 \begin_inset Graphics
 	filename img/5_concat_mapa.png
-	height 6cm
+	lyxscale 75
+	height 8cm
+	BoundingBox 0bp 0bp 941bp 666bp
 
 \end_inset
 
@@ -14936,7 +14903,6 @@ NAME
 \end_inset
 
 .
- Fuente propia.
 \end_layout
 
 \end_inset
@@ -14950,7 +14916,15 @@ NAME
 \end_layout
 
 \begin_layout Standard
-También es posible concatenar con la doble barra vertical o pleca (
+También es posible concatenar con la doble barra vertical o 
+\begin_inset Quotes cld
+\end_inset
+
+pleca
+\begin_inset Quotes crd
+\end_inset
+
+ (
 \begin_inset Formula $||$
 \end_inset
 
@@ -15206,10 +15180,10 @@ Matemáticas
 \end_layout
 
 \begin_layout Standard
-Las operaciones matemáticas que permite realizar Qgis son muy completas
+Las operaciones matemáticas que permite realizar QGIS son muy completas
  y su utilización es muy similar a cualquier otro programa CAS o calculadora.
  Solo mostraremos algún ejemplo que resulte de interés para el uso cotidiano
- de Qgis.
+ de QGIS.
 \end_layout
 
 \begin_layout Subsubsection
@@ -15283,7 +15257,7 @@ Operaciones
 \end_layout
 
 \begin_layout Standard
-Qgis permite utilizar los símbolos aritméticos tradicionales (suma, resta,
+QGIS permite utilizar los símbolos aritméticos tradicionales (suma, resta,
  multiplicación, etc) a los cuales se adicionan algunas operaciones matemáticas
  que también se pueden encontrar en calculadoras científicas o sistemas
  CAS.
@@ -15506,7 +15480,7 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename img/5_tabla_ordenada_string.png
-	height 4cm
+	height 8cm
 
 \end_inset
 
@@ -15534,7 +15508,6 @@ string o cadena
 \end_inset
 
 .
- Fuente propia.
 \end_layout
 
 \end_inset
@@ -15577,7 +15550,7 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename img/5_tabla_ordenada_int.png
-	height 6cm
+	height 8cm
 
 \end_inset
 
@@ -15613,7 +15586,6 @@ entero
 \end_inset
 
 .
- Fuente propia.
 \end_layout
 
 \end_inset
@@ -15987,7 +15959,7 @@ $length
 \end_inset
 
 .
- Qgis advierte que:
+ QGIS advierte que:
 \emph on
  La longitud calculada por esta función respeta tanto la configuración del
  elipsoide del proyecto actual como la de las unidades de longitud.
@@ -16229,7 +16201,7 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename img/5_modelizador_ejemplo.png
-	height 6cm
+	height 10cm
 
 \end_inset
 
@@ -16241,7 +16213,6 @@ status open
 
 \begin_layout Plain Layout
 Modelizador.
- Fuente propia.
 \end_layout
 
 \end_inset
@@ -16264,7 +16235,7 @@ La adopción de modelos cobra sentido cuando hay que realizar trabajos en
 
 \begin_layout Standard
 Los modelos pueden utilizar todos los algoritmos presentes en la caja de
- herramienta de Qgis, y además permite multiplicidad de formatos de entrada
+ herramienta de QGIS, y además permite multiplicidad de formatos de entrada
  como capas propias del proyecto, archivos en disco, conexiones a BBDD,
  archivos, expresiones, etc.
 \end_layout
@@ -16286,10 +16257,10 @@ Complementos
 
 \begin_layout Standard
 Este anexo tiene como objeto presentar una serie de complementos o plugins
- que alternativamente pueden ser utilizados en Qgis y que potencian el trabajo
+ que alternativamente pueden ser utilizados en QGIS y que potencian el trabajo
  cotidiano.
  Como se ha visto anteriormente, los complementos no son parte del núcleo
- de Qgis y se instalan desde el menú superior 
+ de QGIS y se instalan desde el menú superior 
 \begin_inset Quotes cld
 \end_inset
 
@@ -16321,7 +16292,7 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename img/6_complementos.png
-	height 4cm
+	height 8cm
 
 \end_inset
 
@@ -16333,7 +16304,6 @@ status open
 
 \begin_layout Plain Layout
 Gestor de complementos.
- Fuente propia.
 \end_layout
 
 \end_inset
@@ -16414,7 +16384,7 @@ Complementos
 \end_layout
 
 \begin_layout Standard
-Existe un complemento similar, y más integrado a la ventana de Qgis llamado
+Existe un complemento similar, y más integrado a la ventana de QGIS llamado
  
 \begin_inset Quotes cld
 \end_inset
@@ -16468,7 +16438,7 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename img/6_autosaver.png
-	height 3cm
+	height 4cm
 
 \end_inset
 
@@ -16480,7 +16450,6 @@ status open
 
 \begin_layout Plain Layout
 Complemento autoSaver.
- Fuente propia.
 \end_layout
 
 \end_inset
@@ -16575,7 +16544,7 @@ Group Stats
 
 \end_inset
 
-) permite aumentar las funcionalidades de Qgis mediante una herramienta
+) permite aumentar las funcionalidades de QGIS mediante una herramienta
  que genera tablas dinámicas con datos de una misma capa.
  El siguiente ejemplo muestra una tabla que resulta de la capa de países
  (countries), donde se contabiliza la cantidad de países en cada continente
@@ -16607,7 +16576,7 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename img/6_groupstats.png
-	height 6cm
+	width 100text%
 
 \end_inset
 
@@ -16619,7 +16588,6 @@ status open
 
 \begin_layout Plain Layout
 Group Stats.
- Fuente propia.
 \end_layout
 
 \end_inset
@@ -16685,7 +16653,7 @@ Este complemento reúne diversas herramientas de análisis gráfico estadístico
 
 ), pudiendo elegir el tipo de gráfico y sus parámetros de entrada de forma
  sencilla.
- Si bien Qgis posee herramientas de generación de gráficos, esta herramienta
+ Si bien QGIS posee herramientas de generación de gráficos, esta herramienta
  los brinda de forma dinámica desde un panel, pudiendo cambiar parámetros
  en directo y de forma muy sencilla.
 \end_layout
@@ -16712,7 +16680,7 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename img/6_dataplotly_china.png
-	height 6cm
+	width 100text%
 
 \end_inset
 
@@ -16725,7 +16693,6 @@ status open
 \begin_layout Plain Layout
 DataPlotly.
  Población de China proyectada al 2050 agrupadas por provincias.
- Fuente propia.
 \end_layout
 
 \end_inset
@@ -16766,7 +16733,7 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename img/6_dataplotly_grafica.png
-	height 6cm
+	height 10cm
 
 \end_inset
 
@@ -16778,7 +16745,6 @@ status open
 
 \begin_layout Plain Layout
 Gráfica de barras con DataPlotly.
- Fuente propia.
 \end_layout
 
 \end_inset
@@ -16851,7 +16817,7 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename img/6_sin_nivel_simbolo.png
-	height 6cm
+	width 100text%
 
 \end_inset
 
@@ -16864,7 +16830,6 @@ status open
 \begin_layout Plain Layout
 Sin niveles de símbolos.
  Las líneas blancas de buffer deberían visualizarse siempre por debajo.
- Fuente propia.
 \end_layout
 
 \end_inset
@@ -16912,7 +16877,7 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename img/6_con_nivel_simbolo.png
-	height 6cm
+	width 100text%
 
 \end_inset
 
@@ -16925,7 +16890,6 @@ status open
 \begin_layout Plain Layout
 Niveles de símbolos activados.
  El buffer queda siempre por debajo de las líneas de colores.
- Fuente propia.
 \end_layout
 
 \end_inset
@@ -17001,7 +16965,7 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename img/6_asistente_etiqueta.png
-	height 5cm
+	height 8cm
 
 \end_inset
 
@@ -17013,7 +16977,6 @@ status open
 
 \begin_layout Plain Layout
 Asistente de tamaños de etiqueta.
- Fuente propia.
 \end_layout
 
 \end_inset
@@ -17044,7 +17007,7 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename img/6_asistente_configuracion.png
-	height 4cm
+	width 100text%
 
 \end_inset
 
@@ -17057,7 +17020,6 @@ status open
 \begin_layout Plain Layout
 Configuración de tamaños de etiqueta.
  La fuente de datos debe ser numérica.
- Fuente propia.
 \end_layout
 
 \end_inset
@@ -17157,7 +17119,7 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename img/6_estilo_basado_reglas.png
-	height 3cm
+	width 100text%
 
 \end_inset
 
@@ -17179,7 +17141,6 @@ ELSE
 
  permite reglar cualquier otra opción que no quede dentro de las primeras
  dos opciones.
- Fuente propia.
 \end_layout
 
 \end_inset
@@ -17206,7 +17167,7 @@ Mover y rotar etiquetas manualmente
 \end_layout
 
 \begin_layout Standard
-En las nuevas versiones de Qgis se ha avanzado mucho en la gestión de desplazami
+En las nuevas versiones de QGIS se ha avanzado mucho en la gestión de desplazami
 ento y rotación de etiquetas, y actualmente las configuraciones adicionales
  para este tipo de edición se guardan en el proyecto, a diferencia de versiones
  pasadas donde había que configurar campos específicos para lograr ésto.
@@ -17296,7 +17257,8 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename img/6_ventana_propiedades_etiquetas.png
-	height 6cm
+	lyxscale 75
+	height 12cm
 
 \end_inset
 
@@ -17308,7 +17270,6 @@ status open
 
 \begin_layout Plain Layout
 Propiedades de una etiqueta particular.
- Fuente propia.
 \end_layout
 
 \end_inset
@@ -17391,7 +17352,7 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename img/6_diagrama_atributos.png
-	height 4cm
+	height 6cm
 
 \end_inset
 
@@ -17413,7 +17374,6 @@ Histograma
 .
  Los campos que figuran cuentan la cantidad de ciudades y aeropuertos de
  cada país.
- Fuente propia.
 \end_layout
 
 \end_inset
@@ -17467,7 +17427,7 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename img/6_diagrama_tamano.png
-	height 4cm
+	height 6cm
 
 \end_inset
 
@@ -17487,7 +17447,6 @@ Histograma
 \end_inset
 
 .
- Fuente propia.
 \end_layout
 
 \end_inset
@@ -17517,7 +17476,8 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename img/6_diagrama_mapa.png
-	height 6cm
+	lyxscale 75
+	width 100text%
 
 \end_inset
 
@@ -17529,7 +17489,6 @@ status open
 
 \begin_layout Plain Layout
 Diagramas en mapa.
- Fuente propia.
 \end_layout
 
 \end_inset
@@ -17697,7 +17656,7 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename img/6_temas_mapa_1.png
-	height 4cm
+	height 6cm
 
 \end_inset
 
@@ -17709,7 +17668,6 @@ status open
 
 \begin_layout Plain Layout
 Tema 1.
- Fuente propia.
 \end_layout
 
 \end_inset
@@ -17794,7 +17752,7 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename img/6_temas_mapa_2.png
-	height 4cm
+	height 6cm
 
 \end_inset
 
@@ -17806,7 +17764,6 @@ status open
 
 \begin_layout Plain Layout
 Tema 2.
- Fuente propia.
 \end_layout
 
 \end_inset
@@ -17876,7 +17833,7 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename img/6_atlas_wikipedia.jpg
-	height 3cm
+	width 100text%
 
 \end_inset
 
@@ -17915,7 +17872,7 @@ literal "false"
 \end_layout
 
 \begin_layout Standard
-En Qgis es posible diseñar una composición de mapa que automáticamente genere
+En QGIS es posible diseñar una composición de mapa que automáticamente genere
  un atlas siguiendo una regla establecida de una capa vectorial.
  Veremos el caso de un atlas de cuadrículas para la región de la península
  Ibérica en particular.
@@ -17951,7 +17908,8 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename img/6_atlas_cuadricula.png
-	height 6cm
+	lyxscale 75
+	height 8cm
 
 \end_inset
 
@@ -17963,7 +17921,6 @@ status open
 
 \begin_layout Plain Layout
 Cuadrícula que servirá como base del atlas.
- Fuente propia.
 \end_layout
 
 \end_inset
@@ -17993,7 +17950,8 @@ a (que apunte al mapa central como vista general), carátula, etc.
 \begin_layout Standard
 \begin_inset Graphics
 	filename img/6_atlas_mapa_base.png
-	height 4cm
+	lyxscale 75
+	height 8cm
 
 \end_inset
 
@@ -18039,7 +17997,7 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename img/6_atlas_panel_configuracion.png
-	height 5cm
+	height 7cm
 
 \end_inset
 
@@ -18051,7 +18009,6 @@ status open
 
 \begin_layout Plain Layout
 Panel de configuración del atlas.
- Fuente propia.
 \end_layout
 
 \end_inset
@@ -18116,7 +18073,8 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename img/6_atlas_miniaturas.png
-	height 5cm
+	lyxscale 75
+	width 100text%
 
 \end_inset
 
@@ -18128,7 +18086,6 @@ status open
 
 \begin_layout Plain Layout
 Exportación a PDF.
- Fuente propia.
 \end_layout
 
 \end_inset
@@ -18165,14 +18122,14 @@ Informes
 \end_layout
 
 \begin_layout Standard
-En Qgis es posible armar un mapa o colección de mapas que sigan una temática
+En QGIS es posible armar un mapa o colección de mapas que sigan una temática
  de forma automática mediante la herramienta “Atlas” desde el compositor
  de mapas.
  La idea detrás de ésto es que el programa se encargue de automatizar una
  composición siguiendo una característica de una capa en particular; por
  ejemplo si tenemos una cobertura de polígonos de usos de suelo con un campo
  “id”, es posible armar un PDF con un mapa para cada “id” solo preparando
- el maquetado base y Qgis se encargará del resto.
+ el maquetado base y QGIS se encargará del resto.
  Este mismo concepto se retoma en parte con los 
 \begin_inset Quotes cld
 \end_inset
@@ -18232,7 +18189,8 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename img/6_informes.png
-	height 6cm
+	lyxscale 75
+	width 100text%
 
 \end_inset
 
@@ -18244,7 +18202,6 @@ status open
 
 \begin_layout Plain Layout
 Ventana de informe.
- Fuente propia.
 \end_layout
 
 \end_inset
@@ -18302,7 +18259,8 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename img/6_informe_caratula.png
-	height 6cm
+	lyxscale 75
+	width 100text%
 
 \end_inset
 
@@ -18314,7 +18272,6 @@ status open
 
 \begin_layout Plain Layout
 Carátula del informe.
- Fuente propia.
 \end_layout
 
 \end_inset
@@ -18382,7 +18339,6 @@ status open
 Grupo de campos.
  Se muestra un ejemplo donde previamente se cargó la capa de lagos y se
  extrajeron los lagos de España en una nueva capa.
- Fuente propia.
 \end_layout
 
 \end_inset
@@ -18422,7 +18378,7 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename img/6_informe_vista_grafica.png
-	height 6cm
+	height 8cm
 
 \end_inset
 
@@ -18435,7 +18391,6 @@ status open
 \begin_layout Plain Layout
 Mapa controlado por informe.
  El mapa y la tabla están controladas por el informe.
- Fuente propia.
 \end_layout
 
 \end_inset
@@ -18479,12 +18434,12 @@ Variables en el compositor
 \end_layout
 
 \begin_layout Standard
-Qgis permite el uso de variables en sus procesos, es decir, donde se pueda
+QGIS permite el uso de variables en sus procesos, es decir, donde se pueda
  hacer uso de expresiones.
  El programa incorpora variables predefinidas versión tras versión, e incluso
  es posible crearlas de acuerdo a las necesidades propias.
  Sin entrar en detalles técnicos, diremos que estas herramientas permiten
- mayor flexibilidad en el uso de Qgis, por ejemplo a la hora de armar composicio
+ mayor flexibilidad en el uso de QGIS, por ejemplo a la hora de armar composicio
 nes.
 \end_layout
 
@@ -18504,7 +18459,7 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename img/6_expresiones_atlas.png
-	height 3cm
+	height 4cm
 
 \end_inset
 
@@ -18516,7 +18471,6 @@ status open
 
 \begin_layout Plain Layout
 Editor de expresiones.
- Fuente propia.
 \end_layout
 
 \end_inset
@@ -18571,7 +18525,7 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename img/6_variables_atlas.png
-	height 3cm
+	height 4cm
 
 \end_inset
 
@@ -18583,7 +18537,6 @@ status open
 
 \begin_layout Plain Layout
 Variables de atlas en compositor.
- Fuente propia.
 \end_layout
 
 \end_inset
@@ -18612,7 +18565,7 @@ Atajos del teclado
 Como en todo programa de uso intensivo, la utilización del teclado como
  vía de entrada a ciertos comandos o herramientas de uso frecuente facilitan
  la labor notablemente.
- Por defecto Qgis trae pre-programados algunos atajos del teclado, por ejemplo
+ Por defecto QGIS trae pre-programados algunos atajos del teclado, por ejemplo
  seleccionada una capa de datos al presionar 
 \begin_inset Quotes cld
 \end_inset
@@ -18683,7 +18636,7 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename img/6_atajos_teclado.png
-	height 3cm
+	height 6cm
 
 \end_inset
 
@@ -18695,7 +18648,6 @@ status open
 
 \begin_layout Plain Layout
 Atajos del teclado.
- Fuente propia.
 \end_layout
 
 \end_inset
@@ -18782,12 +18734,12 @@ s de los paneles y barras de herramientas, atajos del teclado, tamaño de
  tipografías, complementos, etc.
  del usuario.
  Es muy útil para cuando necesitamos pasar configuraciones de una instalación
- de Qgis a otra computadora o bien cuando dos personas trabajan sobre una
+ de QGIS a otra computadora o bien cuando dos personas trabajan sobre una
  misma computadora pero tienen personalizaciones diferentes.
 \end_layout
 
 \begin_layout Standard
-Si se quiere utilizar un perfil creado en otra instalación de Qgis, se lo
+Si se quiere utilizar un perfil creado en otra instalación de QGIS, se lo
  deberá copiar en la carpeta correspondiente, dentro de la carpeta 
 \begin_inset Quotes cld
 \end_inset
@@ -18796,7 +18748,7 @@ profiles
 \begin_inset Quotes crd
 \end_inset
 
- de Qgis (dentro de la carpeta del programa).
+ de QGIS (dentro de la carpeta del programa).
 \end_layout
 
 \begin_layout Subsection
@@ -18854,8 +18806,8 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename img/6_vista_de_mapa.png
-	lyxscale 50
-	height 6cm
+	lyxscale 75
+	width 100text%
 
 \end_inset
 
@@ -18866,8 +18818,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Varias vistas de mapas empotradas en la ventana de Qgis.
- Fuente propia.
+Varias vistas de mapas empotradas en la ventana de QGIS.
 \end_layout
 
 \end_inset
@@ -18912,7 +18863,7 @@ Nueva vista de mapa 3D
 \end_layout
 
 \begin_layout Standard
-Qgis ha incorporado esta interesante vista de mapa que permite visualizar
+QGIS ha incorporado esta interesante vista de mapa que permite visualizar
  datos en tres dimensiones dentro de la propia interfaz del programa, pudiendo
  exportar la a vista como salidas gráfica en formato imagen.
  En la siguiente imagen se configuró la capa 
@@ -18951,7 +18902,8 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename img/6_vista_3d.png
-	height 6cm
+	lyxscale 75
+	height 8cm
 
 \end_inset
 
@@ -18963,7 +18915,6 @@ status open
 
 \begin_layout Plain Layout
 Vista de mapa en 3D.
- Fuente propia.
 \end_layout
 
 \end_inset
@@ -18993,7 +18944,7 @@ macros
 \begin_inset Quotes crd
 \end_inset
 
- para Qgis que permiten incrementar funcionalidades como mostrar una foto
+ para QGIS que permiten incrementar funcionalidades como mostrar una foto
  asociada a un campo de una capa, abrir un enlace web, ejecutar un código
  en Python, abrir una aplicación, etc.
 \end_layout
@@ -19054,7 +19005,8 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename img/6_configurar_accion.png
-	height 6cm
+	lyxscale 75
+	height 12cm
 
 \end_inset
 
@@ -19066,7 +19018,6 @@ status open
 
 \begin_layout Plain Layout
 Configurar acción.
- Fuente propia.
 \end_layout
 
 \end_inset
@@ -19104,7 +19055,7 @@ status open
 \begin_inset Graphics
 	filename img/6_wikidata.png
 	lyxscale 75
-	height 4cm
+	width 100text%
 
 \end_inset
 
@@ -19116,7 +19067,6 @@ status open
 
 \begin_layout Plain Layout
 Página de Wikidata en internet del objeto Q5465, Cape Town, Sudáfrica.
- Fuente propia.
 \end_layout
 
 \end_inset
