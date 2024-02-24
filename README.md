@@ -1,6 +1,6 @@
 # Introduccion a los Sistemas de Informacion Geografica con Qgis
 
-Versión 1.0
+Versión 2.0
 
 ## Descripción
 
@@ -19,6 +19,17 @@ La estructura del libro va desde el nivel 0 al 6, en niveles de dificultad y com
 - Análisis. Es el último nivel que completa este curso y permite adquirir las herramientas para realizar análisis de datos de forma integral. Aquellos que necesiten profundizar en el uso de un SIG son los destinatarios de este nivel, donde podrán realizar geoprocesos vectoriales, filtros avanzados, consultas complejas de datos, etc.
 
 - Anexos. En el anexo se encuentran algunas herramientas y configuraciones avanzadas que por sus características se decidió no incluir en ninguno de los capítulos anteriores.
+
+## Cambios en la segunda versión
+
+• Actualización de portada
+• Actualización de lista de grupos
+• Actualización de enlaces
+• Capítulos 1 y 2: Revisión, renovación y actualización de gráficos. Reformulación de definiciones y conceptos. Actualización de enlaces. Agregado de simbología ráster. Agregado de herramientas y configuraciones.
+• Capitulo 3: Actualización de gráficas y textos de procesos vectoriales. Agregado de procesos vectoriales básicos y nueva sección de edición de capas ráster.
+• Capítulo 4: Actualización de gráficas y textos. Agregado de configuraciones y nuevos elementos de mapa.
+• Capítulo 5: Actualización de gráficas y textos de procesos de análisis vectorial. Agregado de procesos vectoriales avanzados. Incorporación de nueva sección de análisis ráster.
+• Capítulo 6: Actualización de gráficas y textos. Incorporación de nuevos complementos y configuraciones. Agregado de nueva sección de fuentes de datos abiertos.
 
 ## Data
 
