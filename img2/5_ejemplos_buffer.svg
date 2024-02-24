@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="290.93945mm"
+   height="53.582672mm"
+   viewBox="0 0 290.93945 53.582672"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
+   sodipodi:docname="5_ejemplos_buffer.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     lock-margins="true"
+     fit-margin-top="2.3"
+     fit-margin-left="2.3"
+     fit-margin-right="2.3"
+     fit-margin-bottom="2.3"
+     inkscape:zoom="0.51717104"
+     inkscape:cx="273.60388"
+     inkscape:cy="15.46877"
+     inkscape:window-width="1920"
+     inkscape:window-height="1007"
+     inkscape:window-x="0"
+     inkscape:window-y="44"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2">
+    <marker
+       style="overflow:visible"
+       id="Arrow1Lend"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow1Lend"
+       inkscape:isstock="true">
+      <path
+         transform="matrix(-0.8,0,0,-0.8,-10,0)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         id="path3039" />
+    </marker>
+  </defs>
+  <g
+     inkscape:label="Capa 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-40.42478,-22.203834)">
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 227.55016,54.243191 c 0,0 6.99554,-33.170863 16.00508,-21.766303 5.41514,6.854653 -1.77612,14.841513 7.95729,16.041713 9.75107,1.20237 11.62753,8.97114 7.23459,13.92325 -4.39295,4.95212 -16.30459,6.97219 -23.48013,3.73959 -5.53693,-2.4944 -7.73812,-4.73901 -7.71683,-11.93825 z"
+       id="path857"
+       sodipodi:nodetypes="cssssc"
+       inkscape:export-filename="/home/federico/Documentos/Qgis/Introduccion a los sistemas de informacion geografica/img/5_ejemplos_buffer.png"
+       inkscape:export-xdpi="119.987"
+       inkscape:export-ydpi="119.987" />
+    <circle
+       style="fill:none;stroke:#0066ff;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
+       id="path1284"
+       cx="44.399399"
+       cy="46.529724"
+       r="1.1746184"
+       inkscape:export-filename="/home/federico/Documentos/Qgis/Introduccion a los sistemas de informacion geografica/img/5_ejemplos_buffer.png"
+       inkscape:export-xdpi="119.987"
+       inkscape:export-ydpi="119.987" />
+    <circle
+       style="fill:none;stroke:#0066ff;stroke-width:0.647165;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
+       id="circle1366"
+       cx="83.839645"
+       cy="46.529724"
+       r="5.4816718"
+       inkscape:export-filename="/home/federico/Documentos/Qgis/Introduccion a los sistemas de informacion geografica/img/5_ejemplos_buffer.png"
+       inkscape:export-xdpi="119.987"
+       inkscape:export-ydpi="119.987" />
+    <path
+       style="fill:none;stroke:#0066ff;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 227.55016,54.243191 c 0,0 6.99554,-33.170863 16.00508,-21.766303 5.41514,6.854653 -1.77612,14.841513 7.95729,16.041713 9.75107,1.20237 11.62753,8.97114 7.23459,13.92325 -4.39295,4.95212 -16.30459,6.97219 -23.48013,3.73959 -5.53693,-2.4944 -7.73812,-4.73901 -7.71683,-11.93825 z"
+       id="path1404"
+       sodipodi:nodetypes="cssssc"
+       inkscape:export-filename="/home/federico/Documentos/Qgis/Introduccion a los sistemas de informacion geografica/img/5_ejemplos_buffer.png"
+       inkscape:export-xdpi="119.987"
+       inkscape:export-ydpi="119.987" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:1, 1;stroke-dashoffset:0;stroke-opacity:1"
+       d="m 289.87513,54.243191 c 0,0 6.99555,-33.170863 16.00509,-21.766303 5.41514,6.854653 -1.77612,14.841513 7.95729,16.041713 9.75107,1.20237 11.62753,8.97114 7.23459,13.92325 -4.39295,4.95212 -16.30459,6.97219 -23.48013,3.73959 -5.53693,-2.4944 -7.73812,-4.73901 -7.71684,-11.93825 z"
+       id="path1488"
+       sodipodi:nodetypes="cssssc"
+       inkscape:export-filename="/home/federico/Documentos/Qgis/Introduccion a los sistemas de informacion geografica/img/5_ejemplos_buffer.png"
+       inkscape:export-xdpi="119.987"
+       inkscape:export-ydpi="119.987" />
+    <path
+       id="path1490"
+       style="fill:none;stroke:#0066ff;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 301.42657,25.010667 c -3.94395,0.279457 -7.18041,3.213896 -8.97943,6.5716 -4.10627,7.285824 -6.62617,15.410804 -7.80047,23.671094 -0.37605,6.25918 3.44608,12.56574 9.24494,15.00777 7.48157,3.6788 16.47806,3.4518 24.12877,0.39426 4.65203,-1.85156 8.81742,-5.6047 10.13877,-10.55636 1.33045,-4.89198 -0.73794,-10.34252 -4.69018,-13.42609 -2.25343,-1.84575 -5.08802,-2.82315 -7.95309,-3.17527 -0.64243,-0.1159 -1.32218,-0.2204 -1.90963,-0.48896 -0.24028,-1.71194 0.10565,-3.45824 -0.25997,-5.16133 -0.46624,-4.39156 -2.49599,-8.890314 -6.3273,-11.316966 -1.65739,-1.045469 -3.63208,-1.594874 -5.59241,-1.519748 z"
+       inkscape:export-filename="/home/federico/Documentos/Qgis/Introduccion a los sistemas de informacion geografica/img/5_ejemplos_buffer.png"
+       inkscape:export-xdpi="119.987"
+       inkscape:export-ydpi="119.987" />
+    <circle
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:1, 1;stroke-dashoffset:0"
+       id="circle1518"
+       cx="83.839645"
+       cy="46.529724"
+       r="1.1746184"
+       inkscape:export-filename="/home/federico/Documentos/Qgis/Introduccion a los sistemas de informacion geografica/img/5_ejemplos_buffer.png"
+       inkscape:export-xdpi="119.987"
+       inkscape:export-ydpi="119.987" />
+    <path
+       style="fill:none;stroke:#0066ff;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 117.40047,36.099857 20.28924,22.163"
+       id="path1553"
+       inkscape:export-filename="/home/federico/Documentos/Qgis/Introduccion a los sistemas de informacion geografica/img/5_ejemplos_buffer.png"
+       inkscape:export-xdpi="119.987"
+       inkscape:export-ydpi="119.987" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:1, 1;stroke-dashoffset:0;stroke-opacity:1"
+       d="m 169.50686,36.099857 20.28925,22.163"
+       id="path1820"
+       inkscape:export-filename="/home/federico/Documentos/Qgis/Introduccion a los sistemas de informacion geografica/img/5_ejemplos_buffer.png"
+       inkscape:export-xdpi="119.987"
+       inkscape:export-ydpi="119.987" />
+    <path
+       id="path1822"
+       style="color:#000000;fill:none;stroke:#0066ff;-inkscape-stroke:none"
+       d="m 164.98188,36.170294 24.24633,26.918543 5.42578,-4.964844 -24.58008,-26.84961 z"
+       sodipodi:nodetypes="ccccc"
+       inkscape:export-filename="/home/federico/Documentos/Qgis/Introduccion a los sistemas de informacion geografica/img/5_ejemplos_buffer.png"
+       inkscape:export-xdpi="119.987"
+       inkscape:export-ydpi="119.987" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Arrow1Lend)"
+       d="M 142.28973,47.637677 H 161.9767"
+       id="path3034"
+       inkscape:export-filename="/home/federico/Documentos/Qgis/Introduccion a los sistemas de informacion geografica/img/5_ejemplos_buffer.png"
+       inkscape:export-xdpi="119.987"
+       inkscape:export-ydpi="119.987" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Arrow1Lend)"
+       d="M 51.567859,47.301052 H 71.254833"
+       id="path3384"
+       inkscape:export-filename="/home/federico/Documentos/Qgis/Introduccion a los sistemas de informacion geografica/img/5_ejemplos_buffer.png"
+       inkscape:export-xdpi="119.987"
+       inkscape:export-ydpi="119.987" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Arrow1Lend)"
+       d="m 259.82971,45.193851 h 19.68698"
+       id="path3386"
+       inkscape:export-filename="/home/federico/Documentos/Qgis/Introduccion a los sistemas de informacion geografica/img/5_ejemplos_buffer.png"
+       inkscape:export-xdpi="119.987"
+       inkscape:export-ydpi="119.987" />
+  </g>
+</svg>
