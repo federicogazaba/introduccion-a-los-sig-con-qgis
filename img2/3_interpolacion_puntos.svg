@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="50.47982mm"
+   height="17.486897mm"
+   viewBox="0 0 50.47982 17.486897"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
+   sodipodi:docname="3_interpolacion_puntos.svg"
+   inkscape:export-filename="/home/federico/Documentos/Qgis/Introduccion a los sistemas de informacion geografica/img/3_interpolacion_puntos.png"
+   inkscape:export-xdpi="200"
+   inkscape:export-ydpi="200"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:snap-object-midpoints="true"
+     fit-margin-top="5"
+     lock-margins="true"
+     fit-margin-left="5"
+     fit-margin-right="5"
+     fit-margin-bottom="5"
+     inkscape:zoom="1.4627806"
+     inkscape:cx="107.67165"
+     inkscape:cy="110.74798"
+     inkscape:window-width="1920"
+     inkscape:window-height="1007"
+     inkscape:window-x="0"
+     inkscape:window-y="44"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2" />
+  <g
+     inkscape:label="Capa 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-29.250075,-47.074827)">
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 36.638679,58.31148 H 54.026236 72.68724"
+       id="path4664" />
+    <circle
+       style="fill:#ffffff;stroke:#0066ff;stroke-width:0.277735;stroke-linecap:round;stroke-linejoin:round"
+       id="path846"
+       cx="36.63868"
+       cy="58.311481"
+       r="1.1113743" />
+    <circle
+       style="fill:#ffffff;stroke:#0066ff;stroke-width:0.277735;stroke-linecap:round;stroke-linejoin:round"
+       id="circle928"
+       cx="72.687241"
+       cy="58.311481"
+       r="1.1113743" />
+    <circle
+       style="fill:#ffffff;stroke:#ff0000;stroke-width:0.277735;stroke-linecap:round;stroke-linejoin:round"
+       id="circle930"
+       cx="54.026237"
+       cy="58.311481"
+       r="1.1113743" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:4.26524px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#0066ff;fill-opacity:1;stroke:none;stroke-width:0.106631"
+       x="33.870468"
+       y="55.167126"
+       id="text2448"><tspan
+         sodipodi:role="line"
+         id="tspan2446"
+         style="fill:#0066ff;stroke-width:0.106631"
+         x="33.870468"
+         y="55.167126">10</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:4.26524px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#0066ff;fill-opacity:1;stroke:none;stroke-width:0.106631"
+       x="70.059464"
+       y="55.167126"
+       id="text3720"><tspan
+         sodipodi:role="line"
+         id="tspan3718"
+         style="fill:#0066ff;stroke-width:0.106631"
+         x="70.059464"
+         y="55.167126">20</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:4.26524px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ff0000;fill-opacity:1;stroke:none;stroke-width:0.106631"
+       x="53.283512"
+       y="55.167126"
+       id="text4252"><tspan
+         sodipodi:role="line"
+         id="tspan4250"
+         style="fill:#ff0000;stroke-width:0.106631"
+         x="53.283512"
+         y="55.167126">?</tspan></text>
+  </g>
+</svg>
