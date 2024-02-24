@@ -38,11 +38,11 @@ de localización regional.
 
 ## Estructura del documento
 
-El libro está confeccionado con el software Lyx (https://www.lyx.org/WebEs.Home), un procesador de documentos del tipo (WYSIWYM) que combina TeX/LaTeX con la facilidad de uso de una interfaz gráfica. Para abrir el documento es necesario descargar la carpeta /img (donde se encuentran todas las imágenes) y el archivo "introduccion-a-los-sig-con-qgis.lyx" en el mismo lugar. Una vez abierto se podrá exportar a los diferentes formatos que provee el programa como por ejemplo PDF (pdflatex). En particular, sobre una instalación de Lyx en Ubuntu 20.04 conviene que la ruta de la carpeta raíz no contenga caracteres no convencionales para evitar errores en la exportación a PDF.
+El libro está confeccionado con el software Lyx (https://www.lyx.org/WebEs.Home), un procesador de documentos del tipo (WYSIWYM) que combina TeX/LaTeX con la facilidad de uso de una interfaz gráfica. Para abrir el documento es necesario descargar la carpeta /img (donde se encuentran todas las imágenes) y el archivo "introduccion-a-los-sig-con-qgis.lyx" en el mismo lugar. Una vez abierto se podrá exportar a los diferentes formatos que provee el programa como por ejemplo PDF (pdflatex). En particular, sobre una instalación de Lyx en Ubuntu conviene que la ruta de la carpeta raíz no contenga caracteres no convencionales para evitar errores en la exportación a PDF.
 
-Se adjuntó un archivo en formato tex, exportado directamente de Lyx, para abrir desde algún editor LaTeX convencional.
+Se adjuntó un archivo en formato PDF de cada versión (la segunda versión en tres partes debido al tamaño que limita github de subida).
 
-La carpeta /img contiene las imágenes del libro donde su prefijo va del 0 al 6 de acuerdo al capítulo que pertenece. 
+La carpeta /img y /img2 contienen las imágenes de cada versión del libro donde su prefijo va del 0 al 7 de acuerdo al capítulo al que pertenece. Es decir, para compilar el pdf de cada versión hará falta descargar el archivo lyx y la carpeta /img correspondiente.
 
 ## Licencia
 
